@@ -23,35 +23,21 @@ int main()
 	// 소수를 찾는 방법...?
 	for (const auto v : vec)
 	{
+		if (v == 1)
+			continue;
+
 		if (v == 2)
 		{
 			count++;
 			continue;
 		}
 
-		if (v == 1)
-		{
-			continue;
-		}
-
 		bool isPrime = true;
 
-		// 1. 2 ~ v-1 까지 모두 나눠보고 소수인지 판별
-		for (int i = 2; i < v; i++)
+		for (int i = 2; i * i <= v; i++)
 		{
-			// i로 나눴을때 나누어떨어지면??
-			// 소수가 아님
 			if (v % i == 0)
-			{
 				isPrime = false;
-				break;
-			}
-
-			// 모두 다 돌았는데 나누어 떨어지지 않았다??
-			// 소수임
-
-			// 즉 한번이라도 나누어 떨어지면 소수가 아님
-
 		}
 
 		if (isPrime)
