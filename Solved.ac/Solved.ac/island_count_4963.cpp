@@ -133,5 +133,5 @@ int main()
 		cout << islandCnt << '\n';
 	}
 
-	return -1;
+	return 0;
 }
