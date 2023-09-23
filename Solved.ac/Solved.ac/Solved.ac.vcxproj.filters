@@ -3,5 +3,7 @@
   <ItemGroup>
     <ClCompile Include="island_count_4963.cpp" />
     <ClCompile Include="1978.cpp" />
+    <ClCompile Include="4153.cpp" />
+    <ClCompile Include="11650.cpp" />
   </ItemGroup>
 </Project>
