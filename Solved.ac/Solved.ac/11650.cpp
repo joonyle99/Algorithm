@@ -1,59 +1,42 @@
 #include <iostream>
-#include <vector>
-#include <stack>
-#include <algorithm>
+#include <string>
 
 using namespace std;
-
-struct Pos
-{
-	int x;
-	int y;
-
-	Pos(int x, int y)
-	{
-		this->x = x;
-		this->y = y;
-	}
-};
-
-// x좌표가 증가하는 순서
-// 같으면 y좌표가 증가하는 순서
-bool compare(Pos a, Pos b)
-{
-	if (a.x < b.x)
-		return true;
-	else if (a.x == b.x)
-	{
-		if (a.y < b.y)
-			return true;
-	}
-
-	return false;
-}
 
 int main()
 {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
 
-	int N; cin >> N;
-	vector<Pos> arr;
+	int L; cin >> L;
+	string str; cin >> str;
 
-	for (int i = 0; i < N; ++i)
+	// Hashing Function
+	// Sigma(ai * r^i) mod M
+
+	long long result = 0;
+	long long r = 1;
+
+	// 문자열의 각 요소를 char로 읽어온다
+	for (int i = 0; i < L; ++i)
 	{
-		int u; cin >> u;
-		int v; cin >> v;
+		constexpr int power = 31;
 
-		arr.push_back(Pos(u, v));
+		/// Moduler 연산의 분배법칙을 사용해야 한다.
+		
+		// char는 정수형으로 표현이 되는데 -96을 해준다.
+		int a = (static_cast<int>(str[i]) - 96) % 1234567891;
+
+		if (i != 0)
+			r *= power;
+
+		r %= 1234567891;
+
+		// Hashing 함수를 적용해 result에 저장한다.
+		result += (a * r);
 	}
 
-	std::sort(arr.begin(), arr.end(), compare);
-
-	for (int i = 0; i < N; ++i)
-	{
-		cout << arr[i].x << " " << arr[i].y << '\n';
-	}
+	cout << result % 1234567891 << '\n';
 
 	return 0;
 }
