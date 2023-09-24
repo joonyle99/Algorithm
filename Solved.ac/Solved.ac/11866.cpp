@@ -1,6 +1,5 @@
 #include <iostream>
-#include <vector>
-#include <string>
+#include <queue>
 
 using namespace std;
 
@@ -14,29 +13,36 @@ int main()
 
 	// 요세푸스의 문제
 	// (N, K) - 요세푸스 순열
-
-	vector<int> arr(N, 0);
-	int cnt = N;
+	queue<int> queue;
 
 	// 초기화
 	for (int i = 0; i < N; ++i)
-		arr[i] = i + 1;
+		queue.push(i + 1);
 
-	int index = 0;
+	cout << "<";
 
-	// 사람이 다 없어질 때까지 계속 삭제
-	while (cnt > 0)
+	while (!queue.empty())
 	{
-		if (K > cnt)
-			K %= cnt;
+		for (int i = 0; i < K; ++i)
+		{
+			if (i == K - 1)
+			{
+				if (queue.size() == 1)
+					cout << queue.front();
+				else
+					cout << queue.front() << ", ";
 
-		index += K;
-
-		cout << arr.at(index - 1) << endl;
-		arr.erase(arr.begin() + index - 1);
-
-		cnt--;
+				queue.pop();
+			}
+			else
+			{
+				queue.push(queue.front());
+				queue.pop();
+			}
+		}
 	}
+
+	cout << ">" << '\n';
 
 	return 0;
 }
