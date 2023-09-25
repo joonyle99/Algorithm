@@ -7,5 +7,6 @@
     <ClCompile Include="11650.cpp" />
     <ClCompile Include="11866.cpp" />
     <ClCompile Include="29160.cpp" />
+    <ClCompile Include="FIFA.cpp" />
   </ItemGroup>
 </Project>
