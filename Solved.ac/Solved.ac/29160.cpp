@@ -6,17 +6,6 @@ using namespace std;
 
 #define POSITION_COUNT 11
 
-struct Player
-{
-	int position;
-	int worth;
-
-	Player() = default;
-	Player(int p, int w)
-		: position(p), worth(w)
-	{}
-};
-
 struct PlayerByPos
 {
 	int number;
@@ -50,7 +39,7 @@ int main()
 
 	int teamWorth = 0;
 
-	// 초기화 : 포지션 번호는 1 ~ 11
+	// 0. 팀은 총 11명으로, 포지션 번호는 1이상 11이하인 정수이다.
 	for (int playerNum = 1; playerNum <= N; ++playerNum)
 	{
 		int p, w;
