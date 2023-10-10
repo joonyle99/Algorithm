@@ -9,6 +9,10 @@
     <ClCompile Include="29160.cpp" />
     <ClCompile Include="FIFA.cpp" />
     <ClCompile Include="10814.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="Test.cpp" />
+=======
+    <ClCompile Include="1912(DP).cpp" />
+>>>>>>> 61b8e671336dcd191da4fe789ff95f398f5eb6ce
   </ItemGroup>
 </Project>
