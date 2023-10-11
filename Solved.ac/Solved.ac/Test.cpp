@@ -52,6 +52,22 @@ public:
 	}
 };
 
+/// <summary>
+/// RAII Smart Pointer
+/// </summary>
+class MyString
+{
+public:
+	char* c = nullptr;
+
+private:
+	int size = 0;
+
+public:
+	MyString(int size) { c = new char[size]; }
+	~MyString() { delete[] c; }
+};
+
 int main()
 {
 	ios::sync_with_stdio(false);
@@ -80,6 +96,8 @@ int main()
 	sStack.vec.emplace_back(3);	// emplace_back은 객체를 복사해서 넣지 않고 stl::vector에 직접 객체를 생성한다
 	sStack.vec.emplace_back(6);
 	sStack.vec.emplace_back(9);
+
+
 
 	return 0;
 }
