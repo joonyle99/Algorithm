@@ -12,5 +12,7 @@
     <ClCompile Include="island_count_4963.cpp" />
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="To_1_1463.cpp" />
+    <ClCompile Include="Coin_2293.cpp" />
+    <ClCompile Include="ATM_11399.cpp" />
   </ItemGroup>
 </Project>
