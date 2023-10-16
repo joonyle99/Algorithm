@@ -23,7 +23,7 @@ int main()
 		constexpr int power = 31;
 
 		/// Moduler 연산의 분배법칙을 사용해야 한다.
-		
+
 		// char는 정수형으로 표현이 되는데 -96을 해준다.
 		int a = (static_cast<int>(str[i]) - 96) % 1234567891;
 

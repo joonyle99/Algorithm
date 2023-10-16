@@ -1,18 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="10814.cpp" />
-    <ClCompile Include="11650.cpp" />
-    <ClCompile Include="11866.cpp" />
-    <ClCompile Include="1912(DP).cpp" />
-    <ClCompile Include="1978.cpp" />
-    <ClCompile Include="29160.cpp" />
-    <ClCompile Include="4153.cpp" />
-    <ClCompile Include="FIFA.cpp" />
-    <ClCompile Include="island_count_4963.cpp" />
-    <ClCompile Include="Test.cpp" />
-    <ClCompile Include="To_1_1463.cpp" />
-    <ClCompile Include="Coin_2293.cpp" />
-    <ClCompile Include="ATM_11399.cpp" />
+    <ClCompile Include="11399_ATM.cpp">
+      <Filter>01_Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="11047_Coin 0.cpp">
+      <Filter>01_Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="1978_Prime Number.cpp">
+      <Filter>03_ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="4153_Right Triangle.cpp">
+      <Filter>03_ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="15829_Hashing.cpp">
+      <Filter>03_ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="1912_Continuous Sum.cpp">
+      <Filter>02_Dynamic Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="1463_To 1.cpp">
+      <Filter>02_Dynamic Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="2293_Coin 1.cpp">
+      <Filter>02_Dynamic Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="4963_Island Count.cpp">
+      <Filter>BFS / DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="11866_Josephus.cpp">
+      <Filter>Implement</Filter>
+    </ClCompile>
+    <ClCompile Include="10814_Age Sort.cpp">
+      <Filter>Sort</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="01_Greedy">
+      <UniqueIdentifier>{7b596d8d-e898-4c31-aa9f-3a4fb6ff4195}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_Dynamic Programming">
+      <UniqueIdentifier>{28d2504d-20d2-426b-b6a1-a22b8f59bb6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_ETC">
+      <UniqueIdentifier>{d702a50b-8ade-46c5-b71b-93be130e6535}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BFS / DFS">
+      <UniqueIdentifier>{4e5a4b35-8fa7-469e-9f00-64ce2d3de6fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implement">
+      <UniqueIdentifier>{e055d84a-5cb8-4806-9c03-05e3c8316439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sort">
+      <UniqueIdentifier>{4c104681-755c-4a2f-930a-8e51be418d2c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
