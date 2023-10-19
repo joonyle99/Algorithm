@@ -41,7 +41,7 @@
     <ClCompile Include="1541_Lost Bracket.cpp">
       <Filter>01_Greedy</Filter>
     </ClCompile>
-    <ClCompile Include="1931_Room assignments.cpp">
+    <ClCompile Include="1931_Room Assignments.cpp">
       <Filter>01_Greedy</Filter>
     </ClCompile>
   </ItemGroup>
