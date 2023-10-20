@@ -61,6 +61,5 @@ int main()
 	// 최대 사용할 수 있는 회의의 최대 개수를 출력
 	cout << cnt << endl;
 
-
 	return 0;
 }
