@@ -44,6 +44,12 @@
     <ClCompile Include="1931_Room Assignments.cpp">
       <Filter>01_Greedy</Filter>
     </ClCompile>
+    <ClCompile Include="5585_Exchanges.cpp">
+      <Filter>01_Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="1543_Search Doc.cpp">
+      <Filter>01_Greedy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="01_Greedy">
