@@ -50,6 +50,15 @@
     <ClCompile Include="1543_Search Doc.cpp">
       <Filter>01_Greedy</Filter>
     </ClCompile>
+    <ClCompile Include="20044_Project Teams.cpp">
+      <Filter>01_Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="1459_Walking.cpp">
+      <Filter>01_Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="2885_Chocolate.cpp">
+      <Filter>01_Greedy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="01_Greedy">
