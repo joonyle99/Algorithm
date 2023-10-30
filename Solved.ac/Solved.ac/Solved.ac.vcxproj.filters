@@ -59,6 +59,9 @@
     <ClCompile Include="2885_Chocolate.cpp">
       <Filter>01_Greedy</Filter>
     </ClCompile>
+    <ClCompile Include="2891_Strong Wind.cpp">
+      <Filter>01_Greedy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="01_Greedy">
