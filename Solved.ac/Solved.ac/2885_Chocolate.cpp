@@ -1,6 +1,4 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
 
 using namespace std;
 
@@ -11,14 +9,41 @@ int main()
 
 	// 초콜릿 식사
 
-	// 시간 제한 1초
-	// 메모리 제한 128MB
+	/*
+	 * K : 적어도 먹어야하는 초콜릿 정사각형 개수
+	 * C : 가장 작은 초콜릿의 크기
+	 * Cnt : 쪼개야 하는 횟수
+	 */
 
-	// 정사각형 N개의 초콜릿 하나
-	// 초콜릿의 정사각형 조각 개수 2^2 (1,2,4,8 ..)
-	// 상근이는 '적어도 K개'를 먹어야 버틸 수 있다
-	// 선영이는 상근이가 주는 초콜릿만 먹는다
-	// K개 정사각형
+	int K; cin >> K;
+	int C = 1;
+	int Cnt = 0;
+
+	// 가장 작은 초콜릿의 크기 구하기 : K와 같거나 큰 2의 제곱수
+	while(true)
+	{
+		if (C >= K)
+			break;
+		C *= 2;
+	}
+	const int finalC = C;
+
+	// 최소 몇 번 쪼개야 하는지 구하기
+	while(K > 0)
+	{
+		// 여기 부분이 핵심 if문을 잘 써준다
+		if (K < C)
+		{
+			C /= 2;
+			Cnt++;
+		}
+		else
+		{
+			K -= C;
+		}
+	}
+
+	cout << finalC << " " << Cnt << '\n';
 
 	return 0;
 }
