@@ -74,6 +74,9 @@
     <ClCompile Include="2785_Chain.cpp">
       <Filter>01_Greedy</Filter>
     </ClCompile>
+    <ClCompile Include="11501_Stock.cpp">
+      <Filter>01_Greedy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="01_Greedy">
@@ -94,10 +97,5 @@
     <Filter Include="00_ETC">
       <UniqueIdentifier>{d702a50b-8ade-46c5-b71b-93be130e6535}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="11501_Stock.cpp">
-      <Filter>01_Greedy</Filter>
-    </None>
   </ItemGroup>
 </Project>
