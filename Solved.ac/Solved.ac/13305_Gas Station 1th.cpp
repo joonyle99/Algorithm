@@ -11,8 +11,8 @@ int main()
 
 	int n; cin >> n;
 
-	long long dist[1000];
-	int cost[1001];
+	long long dist[100000];
+	long long cost[100001];
 
 	for (int i = 1; i < n; ++i)
 		cin >> dist[i];
@@ -22,9 +22,10 @@ int main()
 
 	// 최대한 싼 곳에서 많이 사둬야 한다.
 	long long res = 0;
-	long long minCost = 9999;
+	long long minCost = 99999999999;	// 10억 이상이어야 한다. (10억까지 주유비가 존재할 수 있기 때문)
 
 	/// 문제를 간단하게 생각하는 가장 핵심적인 부분
+	// n -1 까지의 주유소까지만 주유하면 된다
 	for (int i = 1; i < n; ++i)
 	{
 		if (cost[i] < minCost)

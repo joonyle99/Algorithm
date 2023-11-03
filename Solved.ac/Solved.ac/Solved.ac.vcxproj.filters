@@ -34,7 +34,7 @@
     <ClCompile Include="10814_Age Sort.cpp">
       <Filter>04_Sort</Filter>
     </ClCompile>
-    <ClCompile Include="13305_Gas Station.cpp">
+    <ClCompile Include="13305_Gas Station 1th.cpp">
       <Filter>01_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="MyTemplate.cpp" />
@@ -75,6 +75,9 @@
       <Filter>01_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="11501_Stock.cpp">
+      <Filter>01_Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="13305_Gas Station 2th.cpp">
       <Filter>01_Greedy</Filter>
     </ClCompile>
   </ItemGroup>
