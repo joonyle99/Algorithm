@@ -80,8 +80,23 @@
     <ClCompile Include="13305_Gas Station 2th.cpp">
       <Filter>01_Greedy</Filter>
     </ClCompile>
-    <ClCompile Include="소스.cpp">
-      <Filter>00_ETC</Filter>
+    <ClCompile Include="1260_DFS BFS.cpp">
+      <Filter>02_BFS / DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="2331_Repeat Number.cpp">
+      <Filter>02_BFS / DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="2606_Virus.cpp">
+      <Filter>02_BFS / DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="10451_Permutation.cpp">
+      <Filter>02_BFS / DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="2178_Miro.cpp">
+      <Filter>02_BFS / DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="11724_Connect Count.cpp">
+      <Filter>02_BFS / DFS</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
