@@ -16,18 +16,18 @@ std::vector<int> virusComputer;
 /// <param name="n"></param>
 void DFS(int n)
 {
-	// 들어온 값을 찾는다.
+	// 들어온 값 n을 virusComputer에서 찾는다.
 	auto it = std::find(virusComputer.begin(), virusComputer.end(), n);
 
-	// 찾았으면
+	// 값이 있으면 종료
 	if (it != virusComputer.end())
 		return;
-	// 값이 없으면
+	// 값이 없으면 추가
 	else
 		virusComputer.push_back(n);
 
-	// 들어오는 값에 들어가서 쭉 탐색
-	for (int i = 0; i < vec[n].size(); ++i)
+	// 들어오는 값에 들어가서 '깊이 우선 탐색'
+	for (size_t i = 0; i < vec[n].size(); ++i)
 	{
 		DFS(vec[n][i]);
 	}
@@ -50,7 +50,7 @@ int main()
 
 	vec.resize(computerCount + 1);
 
-	// 방향 그래프
+	// 무방향 그래프
 	for (int i = 0; i < networkCount; ++i)
 	{
 		int from; cin >> from;
@@ -63,7 +63,8 @@ int main()
 	// 1번 컴퓨터가 웜 바이러스에 걸렸을 때, 1번 컴퓨터를 통해 웜 바이러스에 걸리게 되는 컴퓨터의 수를 첫째 줄에 출력한다.
 	DFS(1);
 
-	cout << virusComputer.size() - 1<< endl;
+	// 루트 컴퓨터 1번을 제외한 바이러스 걸린 수
+	cout << virusComputer.size() - 1 << endl;
 
 
 	return 0;
