@@ -1,8 +1,5 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
 #include <string>
-#include <stack>
 #include <queue>
 
 using namespace std;
@@ -46,8 +43,32 @@ int DFSLength = 100 * 100;
 // BFS로 구한 최단 거리
 int BFSLength = 100 * 100;
 
+// BFS 거리 맵
+int distMap[102][102];
+
 Position curPos;
 Position goalPos;
+
+ostream& operator << (ostream& os, Position pos)
+{
+	os << "(" << pos.x << " " << pos.y << ") ";
+
+	return os;
+}
+
+void PrintQueue(std::queue<Position> myQueue)
+{
+	system("cls");
+
+	// 큐에 있는 모든 요소를 출력
+	while (!myQueue.empty())
+	{
+		std::cout << myQueue.front();
+		myQueue.pop();
+	}
+
+	cout << endl;
+}
 
 /// <summary>
 /// DFS로 하면 깊이 우선으로 모든 경로를 탐색할 수 있다.
@@ -59,6 +80,7 @@ void DFS(Position pos, int depth)
 	if (pos.x < 1 || pos.y < 1 || pos.x > M || pos.y > N)
 		return;
 
+	// 목표 지점 도달 시, 거리 갱신
 	if (pos == goalPos)
 	{
 		if (DFSLength > depth)
@@ -76,6 +98,8 @@ void DFS(Position pos, int depth)
 		{
 			visited[nextPos.y][nextPos.x] = true;
 			DFS(nextPos, depth + 1);
+
+			// 실패한 경로를 다시 초기화
 			visited[nextPos.y][nextPos.x] = false;
 		}
 	}
@@ -86,9 +110,47 @@ void DFS(Position pos, int depth)
 ///	"최단 경로"를 탐색하는데 효율적이다.
 ///	Queue를 이용한다
 /// </summary>
-void BFS(Position pos, int depth)
+int BFS(Position startPos)
 {
+	// Queue를 이용해 최단 경로 탐색 (완전 탐색)
+	std::queue<Position> myQueue;
 
+	// 시작점 세팅
+	myQueue.push(startPos);
+	visited[startPos.y][startPos.x] = true;
+	distMap[startPos.y][startPos.x] = 1;
+
+	// 큐에 값이 있는 동안 계속해서 반복
+	while(!myQueue.empty())
+	{
+		// 한 위치에서 갈 수 있는 모든 방향을 탐색한다.
+		// 문어발 방식
+		for (int i = 0; i < 4; ++i)
+		{
+			// 다음에 이동할 위치 계산
+			Position nextPos(myQueue.front().x + dirX[i], myQueue.front().y + dirY[i]);
+
+			// 갈 수 있다면
+			if (visited[nextPos.y][nextPos.x] == false && map[nextPos.y][nextPos.x] == true)
+			{
+				// Queue에 넣어둔다.
+				myQueue.push(nextPos);
+
+				// 방문 처리
+				visited[nextPos.y][nextPos.x] = true;
+
+				// 거리 계산 (누적)
+				distMap[nextPos.y][nextPos.x] = distMap[myQueue.front().y][myQueue.front().x] + 1;
+			}
+			else
+				continue;
+		}
+
+		// 다 돌았으면 맨 앞에 있는 요소 제거
+		myQueue.pop();
+	}
+
+	return distMap[N][M];
 }
 
 int main()
@@ -121,11 +183,14 @@ int main()
 	// DFS로 미로 탐색
 	DFS(curPos, 1);
 
-	// BFS로 미로 탐색
-	BFS(curPos, 1);
-
-	// 최단 거리 출력
+	// DFS 최단 거리 출력
 	cout << DFSLength << endl;
+
+	// BFS로 미로 탐색
+	BFSLength = BFS(curPos);
+
+	// BFS 최단 거리 출력
+	cout << BFSLength << endl;
 
 	return 0;
 }
