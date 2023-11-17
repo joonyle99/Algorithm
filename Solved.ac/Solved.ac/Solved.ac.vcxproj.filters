@@ -107,6 +107,9 @@
     <ClCompile Include="2644_Number of Relatives.cpp">
       <Filter>02_BFS / DFS</Filter>
     </ClCompile>
+    <ClCompile Include="10971_Traveling Salesman Problem 2.cpp">
+      <Filter>02_BFS / DFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="01_Greedy">
