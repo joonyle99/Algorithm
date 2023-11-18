@@ -1,43 +1,40 @@
 #include <iostream>
-#include <vector>
 #include <algorithm>
-#include <queue>
 
 using namespace std;
 
 int N;
-int w[11][11];
-bool v[11];
+int graph[11][11];
+bool visited[11];
 
-int minCost = 1000000 * 10;
+int minCost = 1000000 * 10 + 1;
 
-void BFS(int start)
+void DFS(int startNode, int curNode, int remainCnt, int curCost)
 {
-	// 이 지점에서 모든 경로를 다 돌면서 최단 경로를 탐색한다.
-	std::queue<int> myQueue;
-
-	// 시작 지점을 Queue에 넣고 시작
-	myQueue.push(start);
-	v[start] = true;
-
-	// Queue에 아무 값도 남지 않을때까지 반복 실행
-	while (!myQueue.empty())
+	// 다 돌고 돌아가는 일만 남았을 때
+	if (remainCnt == 0)
 	{
-		// 해당 지점에서 이어진 모든 경로를 하나하나 탐색
-		for (int i = 1; i <= N; ++i)
+		// 최종적으로 돌아가는 비용 더하기
+		if (graph[curNode][startNode] != 0)
+			minCost = std::min(curCost + graph[curNode][startNode], minCost);
+
+		return;
+	}
+
+	// startNode에서 cnt개의 노드를 탐색하고, 최소 비용을 구한다.
+	for (int nextNode = 1; nextNode <= N; ++nextNode)
+	{
+		// 갈 수 있는 곳이고, 방문한적이 없는 경우
+		if (graph[curNode][nextNode] != 0 && visited[nextNode] == false && curCost < minCost)
 		{
-			// 방문하지 않은 지점이라면
-			if (v[i] == false && w[myQueue.front()][i] != 0)
-			{
-				// Queue에 넣고
-				myQueue.push(i);
+			visited[nextNode] = true; // 방문처리.
 
-				// 비용 계산을 누적한다.
-				// myQueue.front()
-			}
+			DFS(startNode, nextNode, remainCnt - 1, curCost + graph[curNode][nextNode]);
+
+			visited[nextNode] = false; // 끝까지 들어갔다 나왔으므로, 방문처리를 철회한다.
 		}
-
-		myQueue.pop();
+		else
+			continue;
 	}
 }
 
@@ -50,15 +47,14 @@ int main()
 
 	cin >> N;
 
-	// 비용 그래프 생성
+	// 그래프 생성
 	// index 0은 제외하고 생성한다.
 	for (int i = 1; i <= N; ++i)
 	{
 		for (int j = 1; j <= N; ++j)
 		{
 			int cost; cin >> cost;
-
-			w[i][j] = cost;
+			graph[i][j] = cost;
 		}
 	}
 
@@ -70,23 +66,22 @@ int main()
 
 	// 이 두개를 모두 고려해서 순회하고, 그 중 최단 경로를 찾아야 한다.
 
-	// 1)
+	int finalMinCost = 1000000 * 10 + 1;
 	for (int i = 1; i <= N; ++i)
 	{
-		// 2)
-		BFS(i);
+		visited[i] = true;
+
+		DFS(i, i, N - 1, 0);
+
+		// 방문정보 초기화
+		// std::memset(visited, false, sizeof(visited));
+		std::fill(std::begin(visited), std::end(visited), false);
+
+		// 최종 최소 비용 계산
+		finalMinCost = std::min(finalMinCost, minCost);
 	}
 
-
-	for (int i = 1; i <= N; ++i)
-	{
-		cout << i << " : ";
-		for (int j = 1; j <= N; ++j)
-		{
-			cout << w[i][j] << " ";
-		}
-		cout << endl;
-	}
+	cout << finalMinCost << endl;
 
 	return 0;
 }
