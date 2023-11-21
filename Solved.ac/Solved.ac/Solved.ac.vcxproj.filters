@@ -125,6 +125,21 @@
     <ClCompile Include="1920.cpp">
       <Filter>05_Class 2</Filter>
     </ClCompile>
+    <ClCompile Include="2667_Number Attach.cpp">
+      <Filter>02_BFS / DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="2468_Safe Area.cpp">
+      <Filter>02_BFS / DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="1697_Hide on bush.cpp">
+      <Filter>02_BFS / DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="1389_Bacon%27s six laws.cpp">
+      <Filter>02_BFS / DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="2583_Calculate Area.cpp">
+      <Filter>02_BFS / DFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="01_Greedy">
