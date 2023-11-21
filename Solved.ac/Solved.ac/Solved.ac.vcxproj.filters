@@ -119,6 +119,12 @@
     <ClCompile Include="2609.cpp">
       <Filter>05_Class 2</Filter>
     </ClCompile>
+    <ClCompile Include="9012.cpp">
+      <Filter>05_Class 2</Filter>
+    </ClCompile>
+    <ClCompile Include="1920.cpp">
+      <Filter>05_Class 2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="01_Greedy">
