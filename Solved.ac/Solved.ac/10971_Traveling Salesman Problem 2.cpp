@@ -9,7 +9,7 @@ bool visited[11];
 
 int minCost = 1000000 * 10 + 1;
 
-void DFS(int startNode, int curNode, int remainCnt, int curCost)
+void BFS(int startNode, int curNode, int remainCnt, int curCost)
 {
 	// 다 돌고 돌아가는 일만 남았을 때
 	if (remainCnt == 0)
@@ -29,7 +29,7 @@ void DFS(int startNode, int curNode, int remainCnt, int curCost)
 		{
 			visited[nextNode] = true; // 방문처리.
 
-			DFS(startNode, nextNode, remainCnt - 1, curCost + graph[curNode][nextNode]);
+			BFS(startNode, nextNode, remainCnt - 1, curCost + graph[curNode][nextNode]);
 
 			visited[nextNode] = false; // 끝까지 들어갔다 나왔으므로, 방문처리를 철회한다.
 		}
@@ -71,7 +71,7 @@ int main()
 	{
 		visited[i] = true;
 
-		DFS(i, i, N - 1, 0);
+		BFS(i, i, N - 1, 0);
 
 		// 방문정보 초기화
 		// std::memset(visited, false, sizeof(visited));
