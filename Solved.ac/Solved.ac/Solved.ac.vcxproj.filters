@@ -140,6 +140,12 @@
     <ClCompile Include="2583_Calculate Area.cpp">
       <Filter>02_BFS / DFS</Filter>
     </ClCompile>
+    <ClCompile Include="1181.cpp">
+      <Filter>05_Class 2</Filter>
+    </ClCompile>
+    <ClCompile Include="1018.cpp">
+      <Filter>05_Class 2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="01_Greedy">
