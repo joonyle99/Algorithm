@@ -5,6 +5,8 @@
 
 using namespace std;
 
+int N;
+
 int visited[26][26];
 
 int dx[4] = { 0, 0, -1, 1 };
@@ -19,22 +21,35 @@ struct Position
 	{}
 };
 
-void BFS(std::vector<std::vector<char>>& map, Position pos)
+int SearchAptBlock_BFS(std::vector<std::vector<char>>& map, Position pos)
 {
 	std::queue<Position> myQueue;
+	visited[pos.y][pos.x] = true;
 	myQueue.push(pos);
+	int aptCnt = 1;
 
 	while (!myQueue.empty())
 	{
+		// 상하좌우 순서대로 탐색
 		for (int k = 0; k < 4; ++k)
 		{
 			Position nextPos(myQueue.front().x + dx[k], myQueue.front().y + dy[k]);
-			if (map[nextPos.y][nextPos.x] == '1')
+
+			if (nextPos.x > N || nextPos.y > N || nextPos.x < 1 || nextPos.y < 1)
+				continue;
+
+			if (map[nextPos.y][nextPos.x] == '1' && visited[nextPos.y][nextPos.x] == false)
 			{
-				cout << "(" << nextPos.x << ", " << nextPos.y << ")" << endl;
+				visited[nextPos.y][nextPos.x] = true;
+				myQueue.push(nextPos);
+				aptCnt++;
 			}
 		}
+
+		myQueue.pop();
 	}
+
+	return aptCnt;
 }
 
 int main()
@@ -44,13 +59,13 @@ int main()
 
 	// 단지 번호 붙이기
 
-	int N; cin >> N;
+	cin >> N;
 
 	std::vector<std::vector<char>> map(N + 1);
 	for (auto& vec : map)
 		vec.resize(N + 1);
 
-	// Map 제작
+	// Map 생성
 	for (int i = 1; i <= N; ++i)
 	{
 		string input; cin >> input;
@@ -67,20 +82,35 @@ int main()
 	// 4. 순회한 지점부터 다시 (1)을 시작으로 재실행한다.
 	// 5. 그렇게 단지의 수, 단지의 집의 수를 구한다 (오름차순 정렬)
 
+	int aptBlockCnt = 0;
+	std::vector<int> aptCntArr;
+
 	for (int i = 1; i <= N; ++i)
 	{
 		for (int j = 1; j <= N; ++j)
 		{
-			// 아파트 찾음
-			if (map[i][j] == '1' && visited[i][j] != true)
+			// 아파트 단지 찾음
+			if (map[i][j] == '1' && visited[i][j] == false)
 			{
-				Position searchPos(j, i);
+				aptBlockCnt++;
 
-				// DFS로 싱히좌우 단지를 탐색하기 시작
-				BFS(map, searchPos);
+				const Position searchPos(j, i);
+
+				// 단지를 탐색
+				int aptCnt = SearchAptBlock_BFS(map, searchPos);
+
+				// 단지 내 아파트의 개수
+				aptCntArr.push_back(aptCnt);
 			}
 		}
 	}
+
+	// 단지 내 아파트의 개수를 정렬
+	std::sort(aptCntArr.begin(), aptCntArr.end());
+
+	cout << aptBlockCnt << endl;
+	for (const auto& v : aptCntArr)
+		cout << v << endl;
 
 	return 0;
 }
