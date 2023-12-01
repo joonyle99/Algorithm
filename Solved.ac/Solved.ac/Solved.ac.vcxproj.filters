@@ -88,9 +88,6 @@
     <ClCompile Include="11724_Connect Count.cpp">
       <Filter>05_BFS / DFS</Filter>
     </ClCompile>
-    <ClCompile Include="소스.cpp">
-      <Filter>05_BFS / DFS</Filter>
-    </ClCompile>
     <ClCompile Include="10451_Permultation2.cpp">
       <Filter>05_BFS / DFS</Filter>
     </ClCompile>
@@ -155,6 +152,12 @@
       <Filter>01_Implement</Filter>
     </ClCompile>
     <ClCompile Include="Basic Template.cpp">
+      <Filter>00_Code Snippet</Filter>
+    </ClCompile>
+    <ClCompile Include="BFS.cpp">
+      <Filter>00_Code Snippet</Filter>
+    </ClCompile>
+    <ClCompile Include="DFS.cpp">
       <Filter>00_Code Snippet</Filter>
     </ClCompile>
   </ItemGroup>
