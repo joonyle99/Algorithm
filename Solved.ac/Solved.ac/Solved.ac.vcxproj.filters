@@ -2,181 +2,186 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="11399_ATM.cpp">
-      <Filter>01_Greedy</Filter>
+      <Filter>02_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="11047_Coin 0.cpp">
-      <Filter>01_Greedy</Filter>
-    </ClCompile>
-    <ClCompile Include="1978_Prime Number.cpp">
-      <Filter>00_ETC</Filter>
-    </ClCompile>
-    <ClCompile Include="4153_Right Triangle.cpp">
-      <Filter>00_ETC</Filter>
-    </ClCompile>
-    <ClCompile Include="15829_Hashing.cpp">
-      <Filter>00_ETC</Filter>
+      <Filter>02_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="1912_Continuous Sum.cpp">
-      <Filter>02_Dynamic Programming</Filter>
+      <Filter>07_Dynamic Programming</Filter>
     </ClCompile>
     <ClCompile Include="1463_To 1.cpp">
-      <Filter>02_Dynamic Programming</Filter>
+      <Filter>07_Dynamic Programming</Filter>
     </ClCompile>
     <ClCompile Include="2293_Coin 1.cpp">
-      <Filter>02_Dynamic Programming</Filter>
+      <Filter>07_Dynamic Programming</Filter>
     </ClCompile>
     <ClCompile Include="4963_Island Count.cpp">
-      <Filter>02_BFS / DFS</Filter>
+      <Filter>05_BFS / DFS</Filter>
     </ClCompile>
     <ClCompile Include="11866_Josephus.cpp">
-      <Filter>03_Implement</Filter>
+      <Filter>01_Implement</Filter>
     </ClCompile>
     <ClCompile Include="10814_Age Sort.cpp">
       <Filter>04_Sort</Filter>
     </ClCompile>
     <ClCompile Include="13305_Gas Station 1th.cpp">
-      <Filter>01_Greedy</Filter>
+      <Filter>02_Greedy</Filter>
     </ClCompile>
-    <ClCompile Include="MyTemplate.cpp" />
     <ClCompile Include="1541_Lost Bracket.cpp">
-      <Filter>01_Greedy</Filter>
+      <Filter>02_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="1931_Room Assignments.cpp">
-      <Filter>01_Greedy</Filter>
+      <Filter>02_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="5585_Exchanges.cpp">
-      <Filter>01_Greedy</Filter>
+      <Filter>02_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="1543_Search Doc.cpp">
-      <Filter>01_Greedy</Filter>
+      <Filter>02_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="20044_Project Teams.cpp">
-      <Filter>01_Greedy</Filter>
+      <Filter>02_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="1459_Walking.cpp">
-      <Filter>01_Greedy</Filter>
+      <Filter>02_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="2885_Chocolate.cpp">
-      <Filter>01_Greedy</Filter>
+      <Filter>02_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="2891_Strong Wind.cpp">
-      <Filter>01_Greedy</Filter>
+      <Filter>02_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="1802_Fold Paper.cpp">
-      <Filter>01_Greedy</Filter>
+      <Filter>02_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="2012_Rank.cpp">
-      <Filter>01_Greedy</Filter>
+      <Filter>02_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="12018_Yonsei.cpp">
-      <Filter>01_Greedy</Filter>
+      <Filter>02_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="2785_Chain.cpp">
-      <Filter>01_Greedy</Filter>
+      <Filter>02_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="11501_Stock.cpp">
-      <Filter>01_Greedy</Filter>
+      <Filter>02_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="13305_Gas Station 2th.cpp">
-      <Filter>01_Greedy</Filter>
+      <Filter>02_Greedy</Filter>
     </ClCompile>
     <ClCompile Include="1260_DFS BFS.cpp">
-      <Filter>02_BFS / DFS</Filter>
+      <Filter>05_BFS / DFS</Filter>
     </ClCompile>
     <ClCompile Include="2331_Repeat Number.cpp">
-      <Filter>02_BFS / DFS</Filter>
+      <Filter>05_BFS / DFS</Filter>
     </ClCompile>
     <ClCompile Include="2606_Virus.cpp">
-      <Filter>02_BFS / DFS</Filter>
+      <Filter>05_BFS / DFS</Filter>
     </ClCompile>
     <ClCompile Include="10451_Permutation.cpp">
-      <Filter>02_BFS / DFS</Filter>
+      <Filter>05_BFS / DFS</Filter>
     </ClCompile>
     <ClCompile Include="2178_Miro.cpp">
-      <Filter>02_BFS / DFS</Filter>
+      <Filter>05_BFS / DFS</Filter>
     </ClCompile>
     <ClCompile Include="11724_Connect Count.cpp">
-      <Filter>02_BFS / DFS</Filter>
+      <Filter>05_BFS / DFS</Filter>
     </ClCompile>
     <ClCompile Include="소스.cpp">
-      <Filter>02_BFS / DFS</Filter>
+      <Filter>05_BFS / DFS</Filter>
     </ClCompile>
     <ClCompile Include="10451_Permultation2.cpp">
-      <Filter>02_BFS / DFS</Filter>
+      <Filter>05_BFS / DFS</Filter>
     </ClCompile>
     <ClCompile Include="2644_Number of Relatives.cpp">
-      <Filter>02_BFS / DFS</Filter>
+      <Filter>05_BFS / DFS</Filter>
     </ClCompile>
     <ClCompile Include="10971_Traveling Salesman Problem 2.cpp">
-      <Filter>02_BFS / DFS</Filter>
-    </ClCompile>
-    <ClCompile Include="2798.cpp">
-      <Filter>05_Class 2</Filter>
-    </ClCompile>
-    <ClCompile Include="1259.cpp">
-      <Filter>05_Class 2</Filter>
-    </ClCompile>
-    <ClCompile Include="2609.cpp">
-      <Filter>05_Class 2</Filter>
-    </ClCompile>
-    <ClCompile Include="9012.cpp">
-      <Filter>05_Class 2</Filter>
-    </ClCompile>
-    <ClCompile Include="1920.cpp">
-      <Filter>05_Class 2</Filter>
+      <Filter>05_BFS / DFS</Filter>
     </ClCompile>
     <ClCompile Include="2667_Number Attach.cpp">
-      <Filter>02_BFS / DFS</Filter>
+      <Filter>05_BFS / DFS</Filter>
     </ClCompile>
     <ClCompile Include="2468_Safe Area.cpp">
-      <Filter>02_BFS / DFS</Filter>
+      <Filter>05_BFS / DFS</Filter>
     </ClCompile>
     <ClCompile Include="1697_Hide on bush.cpp">
-      <Filter>02_BFS / DFS</Filter>
+      <Filter>05_BFS / DFS</Filter>
     </ClCompile>
     <ClCompile Include="1389_Bacon%27s six laws.cpp">
-      <Filter>02_BFS / DFS</Filter>
+      <Filter>05_BFS / DFS</Filter>
     </ClCompile>
     <ClCompile Include="2583_Calculate Area.cpp">
-      <Filter>02_BFS / DFS</Filter>
-    </ClCompile>
-    <ClCompile Include="1181.cpp">
-      <Filter>05_Class 2</Filter>
+      <Filter>05_BFS / DFS</Filter>
     </ClCompile>
     <ClCompile Include="1018.cpp">
-      <Filter>05_Class 2</Filter>
+      <Filter>01_Implement</Filter>
+    </ClCompile>
+    <ClCompile Include="1181.cpp">
+      <Filter>04_Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="1259.cpp">
+      <Filter>01_Implement</Filter>
+    </ClCompile>
+    <ClCompile Include="1920.cpp">
+      <Filter>06_Binary Serach</Filter>
     </ClCompile>
     <ClCompile Include="2164.cpp">
-      <Filter>05_Class 2</Filter>
+      <Filter>03_Stack / Queue</Filter>
     </ClCompile>
-    <ClCompile Include="10816.cpp">
-      <Filter>05_Class 2</Filter>
+    <ClCompile Include="2609.cpp">
+      <Filter>01_Implement</Filter>
+    </ClCompile>
+    <ClCompile Include="2798.cpp">
+      <Filter>01_Implement</Filter>
     </ClCompile>
     <ClCompile Include="7568.cpp">
-      <Filter>05_Class 2</Filter>
+      <Filter>01_Implement</Filter>
+    </ClCompile>
+    <ClCompile Include="9012.cpp">
+      <Filter>03_Stack / Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="10816.cpp">
+      <Filter>06_Binary Serach</Filter>
+    </ClCompile>
+    <ClCompile Include="1978_Prime Number.cpp">
+      <Filter>01_Implement</Filter>
+    </ClCompile>
+    <ClCompile Include="4153_Right Triangle.cpp">
+      <Filter>01_Implement</Filter>
+    </ClCompile>
+    <ClCompile Include="15829_Hashing.cpp">
+      <Filter>01_Implement</Filter>
+    </ClCompile>
+    <ClCompile Include="Basic Template.cpp">
+      <Filter>00_Code Snippet</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="01_Greedy">
-      <UniqueIdentifier>{7b596d8d-e898-4c31-aa9f-3a4fb6ff4195}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="02_Dynamic Programming">
-      <UniqueIdentifier>{28d2504d-20d2-426b-b6a1-a22b8f59bb6f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="02_BFS / DFS">
-      <UniqueIdentifier>{4e5a4b35-8fa7-469e-9f00-64ce2d3de6fe}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="03_Implement">
-      <UniqueIdentifier>{e055d84a-5cb8-4806-9c03-05e3c8316439}</UniqueIdentifier>
-    </Filter>
     <Filter Include="04_Sort">
       <UniqueIdentifier>{4c104681-755c-4a2f-930a-8e51be418d2c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="00_ETC">
-      <UniqueIdentifier>{d702a50b-8ade-46c5-b71b-93be130e6535}</UniqueIdentifier>
+    <Filter Include="01_Implement">
+      <UniqueIdentifier>{e055d84a-5cb8-4806-9c03-05e3c8316439}</UniqueIdentifier>
     </Filter>
-    <Filter Include="05_Class 2">
-      <UniqueIdentifier>{a6189e59-772f-42b8-a4b6-a150755a5d15}</UniqueIdentifier>
+    <Filter Include="02_Greedy">
+      <UniqueIdentifier>{7b596d8d-e898-4c31-aa9f-3a4fb6ff4195}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Stack / Queue">
+      <UniqueIdentifier>{f1c45e69-112d-49f5-811c-2c1750b752b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05_BFS / DFS">
+      <UniqueIdentifier>{4e5a4b35-8fa7-469e-9f00-64ce2d3de6fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06_Binary Serach">
+      <UniqueIdentifier>{a2fa2763-6fe0-4082-a36e-92c129ebf134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_Dynamic Programming">
+      <UniqueIdentifier>{28d2504d-20d2-426b-b6a1-a22b8f59bb6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_Code Snippet">
+      <UniqueIdentifier>{aba0a98a-a08e-405a-acb6-39d41e009df0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

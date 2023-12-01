@@ -14,11 +14,7 @@ struct Position
 
 char board[51][51];
 
-/// <summary>
-/// 좌상단 기준으로
-/// </summary>
-/// <returns></returns>
-int ChessBoard(Position topLeft)
+void ChessBoard(Position topLeft)
 {
 	Position curPos(topLeft.x, topLeft.y);
 	int cnt = 0;
@@ -60,6 +56,7 @@ int main()
 		}
 	}
 
+	// 구현 부분
 	for (int i = 1; i <= N; ++i)
 	{
 		for (int j = 1; j <= M; ++j)
