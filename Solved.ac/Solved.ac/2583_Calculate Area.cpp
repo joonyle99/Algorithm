@@ -8,6 +8,14 @@
 using std::cin;
 using std::cout;
 
+struct Position
+{
+	int x, y;
+	Position(int _x, int _y)
+		: x(_x), y(_y)
+	{}
+};
+
 int main()
 {
 	// Break the ios for C and C++
@@ -31,7 +39,19 @@ int main()
 		int bl_x, bl_y, tr_x, tr_y;
 		cin >> bl_x >> bl_y >> tr_x >> tr_y;
 
-		matrix[][];
+		Position bl(bl_x, bl_y);
+		Position tr(tr_x, tr_y);
+
+		for (int i = bl_x; i < tr_x; ++i)
+		{
+			for (int j = bl_y; j < tr_y; ++j)
+			{
+
+			}
+
+		}
+
+
 	}
 
 
