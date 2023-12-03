@@ -151,15 +151,6 @@
     <ClCompile Include="15829_Hashing.cpp">
       <Filter>01_Implement</Filter>
     </ClCompile>
-    <ClCompile Include="Basic Template.cpp">
-      <Filter>00_Code Snippet</Filter>
-    </ClCompile>
-    <ClCompile Include="BFS.cpp">
-      <Filter>00_Code Snippet</Filter>
-    </ClCompile>
-    <ClCompile Include="DFS.cpp">
-      <Filter>00_Code Snippet</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
@@ -182,9 +173,6 @@
     </Filter>
     <Filter Include="07_Dynamic Programming">
       <UniqueIdentifier>{28d2504d-20d2-426b-b6a1-a22b8f59bb6f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="00_Code Snippet">
-      <UniqueIdentifier>{aba0a98a-a08e-405a-acb6-39d41e009df0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

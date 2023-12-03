@@ -60,7 +60,7 @@ void BFS(int y, int x)
 	}
 }
 
-void Reset()
+void ResetVisited()
 {
 	for(int i=0; i<100; ++i)
 	{
@@ -123,7 +123,7 @@ int main()
 
 		maxCnt = std::max(maxCnt, cnt);
 
-		Reset();
+		ResetVisited();
 	}
 
 	cout << maxCnt << '\n';
