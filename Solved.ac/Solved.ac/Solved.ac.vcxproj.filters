@@ -151,6 +151,10 @@
     <ClCompile Include="15829_Hashing.cpp">
       <Filter>01_Implement</Filter>
     </ClCompile>
+    <ClCompile Include="1929_Prime Number.cpp" />
+    <ClCompile Include="2231_Disassemble.cpp" />
+    <ClCompile Include="7568_Big.cpp" />
+    <ClCompile Include="1874_Stack Sequence.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
