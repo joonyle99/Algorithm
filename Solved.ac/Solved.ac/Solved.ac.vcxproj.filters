@@ -151,11 +151,17 @@
     <ClCompile Include="15829_Hashing.cpp">
       <Filter>01_Implement</Filter>
     </ClCompile>
-    <ClCompile Include="1929_Prime Number.cpp" />
-    <ClCompile Include="2231_Disassemble.cpp" />
-    <ClCompile Include="7568_Big.cpp" />
     <ClCompile Include="1874_Stack Sequence.cpp">
       <Filter>03_Stack / Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="7568_Big.cpp">
+      <Filter>01_Implement</Filter>
+    </ClCompile>
+    <ClCompile Include="1929_Prime Number.cpp">
+      <Filter>01_Implement</Filter>
+    </ClCompile>
+    <ClCompile Include="2231_Disassemble.cpp">
+      <Filter>01_Implement</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
