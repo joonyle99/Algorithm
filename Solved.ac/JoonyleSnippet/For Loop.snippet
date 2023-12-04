@@ -12,13 +12,18 @@
 		</Header>
 		<Snippet>
 			<Code Language="CPP">
-				<![CDATA[for (int i = $start$; i < $exit$; ++i)
+				<![CDATA[for (int $var$ = $start$; $var$ < $exit$; ++$var$)
 				{
 					$body$$end$
 				}
 ]]>
 			</Code>
 			<Declarations>
+				<Literal>
+					<ID>var</ID>
+					<ToolTip>Loop 변수 값</ToolTip>
+					<Default>0</Default>
+				</Literal>
 				<Literal>
 					<ID>start</ID>
 					<ToolTip>Loop 시작 값</ToolTip>
