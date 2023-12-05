@@ -163,6 +163,11 @@
     <ClCompile Include="2231_Disassemble.cpp">
       <Filter>01_Implement</Filter>
     </ClCompile>
+    <ClCompile Include="1966_PrinterQueue.cpp" />
+    <ClCompile Include="4949_Balanced World.cpp" />
+    <ClCompile Include="17413_Reverse Word.cpp" />
+    <ClCompile Include="1935_Postfix.cpp" />
+    <ClCompile Include="17413_Reverse Word Stack Version.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
