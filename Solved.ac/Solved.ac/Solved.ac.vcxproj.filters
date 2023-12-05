@@ -168,6 +168,7 @@
     <ClCompile Include="17413_Reverse Word.cpp" />
     <ClCompile Include="1935_Postfix.cpp" />
     <ClCompile Include="17413_Reverse Word Stack Version.cpp" />
+    <ClCompile Include="1676_Factorial.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
