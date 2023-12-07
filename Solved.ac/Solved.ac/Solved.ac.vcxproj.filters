@@ -112,9 +112,6 @@
     <ClCompile Include="2583_Calculate Area.cpp">
       <Filter>05_BFS / DFS</Filter>
     </ClCompile>
-    <ClCompile Include="1018.cpp">
-      <Filter>01_Implement</Filter>
-    </ClCompile>
     <ClCompile Include="1181.cpp">
       <Filter>04_Sort</Filter>
     </ClCompile>
@@ -163,12 +160,30 @@
     <ClCompile Include="2231_Disassemble.cpp">
       <Filter>01_Implement</Filter>
     </ClCompile>
-    <ClCompile Include="1966_PrinterQueue.cpp" />
-    <ClCompile Include="4949_Balanced World.cpp" />
-    <ClCompile Include="17413_Reverse Word.cpp" />
     <ClCompile Include="1935_Postfix.cpp" />
-    <ClCompile Include="17413_Reverse Word Stack Version.cpp" />
-    <ClCompile Include="1676_Factorial.cpp" />
+    <ClCompile Include="18111_MineCraft.cpp">
+      <Filter>01_Implement</Filter>
+    </ClCompile>
+    <ClCompile Include="17413_Reverse Word Stack Version.cpp">
+      <Filter>03_Stack / Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="17413_Reverse Word.cpp">
+      <Filter>01_Implement</Filter>
+    </ClCompile>
+    <ClCompile Include="4949_Balanced World.cpp">
+      <Filter>03_Stack / Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="2108_Statistic.cpp">
+      <Filter>01_Implement</Filter>
+    </ClCompile>
+    <ClCompile Include="1966_PrinterQueue.cpp">
+      <Filter>03_Stack / Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="1676_Factorial.cpp">
+      <Filter>01_Implement</Filter>
+    </ClCompile>
+    <ClCompile Include="1018_ChessBoard.cpp" />
+    <ClCompile Include="1463_Make It 1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
