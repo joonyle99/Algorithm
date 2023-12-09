@@ -184,6 +184,8 @@
     </ClCompile>
     <ClCompile Include="1018_ChessBoard.cpp" />
     <ClCompile Include="1463_Make It 1.cpp" />
+    <ClCompile Include="3986_Good Word.cpp" />
+    <ClCompile Include="23300_Web Browser.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
