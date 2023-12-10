@@ -33,11 +33,16 @@ int main()
 	int N, Q;
 	cin >> N >> Q;
 
-	std::stack<int> backSpace;
-	std::stack<int> frontSpace;
+	/*
+	 * N : 웹 페이지 종류의 수
+	 * Q : 사용자가 수행하는 작업의 개수
+	 */
 
-	int accessCount = 0;
-	int curPageNumber = 0;
+	std::stack<int> backSpace;	// 뒤로 이동할 페이지를 쌓아두는 곳
+	std::stack<int> frontSpace; // 앞으로 이동할 페이지를 쌓아두는 곳
+
+	int accessCount = 0;		// 페이지 이동 횟수 (뒤 / 앞 페이지 이동 제외)
+	int curPageNumber = 0;		// 현재 페이지
 
 	for (int i = 0; i < Q; ++i)
 	{
