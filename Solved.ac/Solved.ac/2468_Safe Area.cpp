@@ -32,9 +32,9 @@ void DFS()
 
 }
 
-void BFS(int y, int x)
+void BFS(int startY, int startX)
 {
-	Position curPos(x, y);
+	Position curPos(startX, startY);
 	std::queue<Position> myQueue;
 	myQueue.push(curPos);
 	visited[curPos.y][curPos.x] = 1;

@@ -160,7 +160,6 @@
     <ClCompile Include="2231_Disassemble.cpp">
       <Filter>01_Implement</Filter>
     </ClCompile>
-    <ClCompile Include="1935_Postfix.cpp" />
     <ClCompile Include="18111_MineCraft.cpp">
       <Filter>01_Implement</Filter>
     </ClCompile>
@@ -182,10 +181,24 @@
     <ClCompile Include="1676_Factorial.cpp">
       <Filter>01_Implement</Filter>
     </ClCompile>
-    <ClCompile Include="1018_ChessBoard.cpp" />
-    <ClCompile Include="1463_Make It 1.cpp" />
-    <ClCompile Include="3986_Good Word.cpp" />
-    <ClCompile Include="23300_Web Browser.cpp" />
+    <ClCompile Include="23300_Web Browser.cpp">
+      <Filter>03_Stack / Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="1463_Make It 1.cpp">
+      <Filter>05_BFS / DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="3986_Good Word.cpp">
+      <Filter>03_Stack / Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="1935_Postfix.cpp">
+      <Filter>03_Stack / Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="1018_ChessBoard.cpp">
+      <Filter>01_Implement</Filter>
+    </ClCompile>
+    <ClCompile Include="1012_Cabbage.cpp" />
+    <ClCompile Include="7576_Tomato.cpp" />
+    <ClCompile Include="소스.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
