@@ -24,12 +24,14 @@ while (std::cin.get(ch) && ch != '\n')
 int BFS(int startY, int startX)
 {
 	std::queue<std::pair<int, int>> myQueue;
-	visited[startY][startX] = true;
 	myQueue.emplace(startX, startY);
+	visited[startY][startX] = true;
 	int innerCount = 1;
 
+	// 큐에 아무것도 없을 때까지
 	while (!myQueue.empty())
 	{
+		// ** 큐에서 하나의 노드를 꺼낸다 **
 		auto front = myQueue.front();
 		myQueue.pop();
 
@@ -46,8 +48,9 @@ int BFS(int startY, int startX)
         	// 방문 정보와 지도 정보를 가지고 탐색 결정
 			if (!visited[nextPos.second][nextPos.first] && map[nextPos.second][nextPos.first] == 1)
 			{
-				visited[nextPos.second][nextPos.first] = true;
+				// ** 연결된 노드 중 방문하지 않은 노드를 방문하고, 차례대로 큐에 삽입한다. **
 				myQueue.push(nextPos);
+				visited[nextPos.second][nextPos.first] = true;
 				innerCount++;
 			}
 		}

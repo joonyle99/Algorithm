@@ -198,7 +198,8 @@
     </ClCompile>
     <ClCompile Include="1012_Cabbage.cpp" />
     <ClCompile Include="7576_Tomato.cpp" />
-    <ClCompile Include="소스.cpp" />
+    <ClCompile Include="1926_Picture.cpp" />
+    <ClCompile Include="1325_Hacking.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
