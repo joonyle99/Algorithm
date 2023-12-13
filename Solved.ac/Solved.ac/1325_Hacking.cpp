@@ -1,8 +1,5 @@
 #include <iostream>
-#include <stack>
-#include <queue>
 #include <vector>
-#include <list>
 #include <algorithm>
 
 using std::cin;
@@ -17,11 +14,26 @@ bool visited[10001] = {};
 // 해킹 가능 횟수
 int hackingCount = 0;
 
-// 최대 해킹 가능 횟수
-int maxHackingCount = 0;
-
-void DFS(int startNumber, int curNumber)
+// second(해킹 횟수)는 큰 순서대로, first(컴퓨터 번호)는 작은 순서대로
+bool compare(std::pair<int, int> a, std::pair<int, int> b)
 {
+	if (a.second == b.second)
+		return a.first < b.first;
+
+	return a.second > b.second;
+}
+
+void ResetVisited()
+{
+	for(int i=0; i<10001; ++i)
+		visited[i] = false;
+}
+
+void DFS(int curNumber)
+{
+	// targetNumber를 방문처리
+	visited[curNumber] = true;
+
 	// 자신을 신뢰하는 모든 컴퓨터를 "동시에" 해킹할 수 있다.
 	hackingCount++;
 
@@ -31,11 +43,7 @@ void DFS(int startNumber, int curNumber)
 		int targetNumber = reverseTrustList[curNumber][i];
 
 		if (!visited[targetNumber])
-		{
-			visited[targetNumber] = true;
-			DFS(startNumber, targetNumber);
-			visited[targetNumber] = false;
-		}
+			DFS(targetNumber);
 	}
 }
 
@@ -75,30 +83,33 @@ int main()
 	}
 
 	// 최대 해킹 가능한 컴퓨터 배열
-	std::vector<int> computerArr;
+	std::vector<std::pair<int, int>> computerArr;
 
 	for (int i = 1; i <= N; ++i)
 	{
-		if (reverseTrustList[i].empty())
-			continue;
+		// i번 컴퓨터를 해킹
+		DFS(i);
 
-		visited[i] = true;
-		DFS(i, i);
-		visited[i] = false;
+		// 방문 정보 초기화
+		ResetVisited();
 
-		if(maxHackingCount <= hackingCount)
-		{
-			maxHackingCount = hackingCount;
-			computerArr.emplace_back(i);
-		}
+		// i번 컴퓨터와 해당 컴퓨터에 대한 해킹 카운트를 배열에 추가
+		computerArr.emplace_back(i, hackingCount);
 
 		hackingCount = 0;
 	}
 
-	std::sort(computerArr.begin(), computerArr.end());
+	std::sort(computerArr.begin(), computerArr.end(), compare);
+
+	int maxHackingCount = computerArr[0].second;
 
 	for (const auto v : computerArr)
-		cout << v << " ";
+	{
+		if (v.second != maxHackingCount)
+			break;
+
+		cout << v.first << " ";
+	}
 
 	return 0;
 }
