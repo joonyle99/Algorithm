@@ -29,18 +29,18 @@ void ResetVisited()
 		visited[i] = false;
 }
 
-void DFS(int curNumber)
+void DFS(int parentNumber)
 {
 	// targetNumber를 방문처리
-	visited[curNumber] = true;
+	visited[parentNumber] = true;
 
 	// 자신을 신뢰하는 모든 컴퓨터를 "동시에" 해킹할 수 있다.
 	hackingCount++;
 
 	// 자신을 신뢰하는 모든 컴퓨터를 모두 순회
-	for (int i = 0; i < reverseTrustList[curNumber].size(); ++i)
+	for (int i = 0; i < reverseTrustList[parentNumber].size(); ++i)
 	{
-		int targetNumber = reverseTrustList[curNumber][i];
+		int targetNumber = reverseTrustList[parentNumber][i];
 
 		if (!visited[targetNumber])
 			DFS(targetNumber);

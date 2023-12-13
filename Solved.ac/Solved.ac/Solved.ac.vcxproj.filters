@@ -200,6 +200,7 @@
     <ClCompile Include="7576_Tomato.cpp" />
     <ClCompile Include="1926_Picture.cpp" />
     <ClCompile Include="1325_Hacking.cpp" />
+    <ClCompile Include="11725_Find_TreeParent.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
