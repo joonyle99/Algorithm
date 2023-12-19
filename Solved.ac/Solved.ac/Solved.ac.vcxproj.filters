@@ -16,9 +16,6 @@
     <ClCompile Include="2293_Coin 1.cpp">
       <Filter>07_Dynamic Programming</Filter>
     </ClCompile>
-    <ClCompile Include="4963_Island Count.cpp">
-      <Filter>05_BFS / DFS</Filter>
-    </ClCompile>
     <ClCompile Include="11866_Josephus.cpp">
       <Filter>01_Implement</Filter>
     </ClCompile>
@@ -69,48 +66,6 @@
     </ClCompile>
     <ClCompile Include="13305_Gas Station 2th.cpp">
       <Filter>02_Greedy</Filter>
-    </ClCompile>
-    <ClCompile Include="1260_DFS BFS.cpp">
-      <Filter>05_BFS / DFS</Filter>
-    </ClCompile>
-    <ClCompile Include="2331_Repeat Number.cpp">
-      <Filter>05_BFS / DFS</Filter>
-    </ClCompile>
-    <ClCompile Include="2606_Virus.cpp">
-      <Filter>05_BFS / DFS</Filter>
-    </ClCompile>
-    <ClCompile Include="10451_Permutation.cpp">
-      <Filter>05_BFS / DFS</Filter>
-    </ClCompile>
-    <ClCompile Include="2178_Miro.cpp">
-      <Filter>05_BFS / DFS</Filter>
-    </ClCompile>
-    <ClCompile Include="11724_Connect Count.cpp">
-      <Filter>05_BFS / DFS</Filter>
-    </ClCompile>
-    <ClCompile Include="10451_Permultation2.cpp">
-      <Filter>05_BFS / DFS</Filter>
-    </ClCompile>
-    <ClCompile Include="2644_Number of Relatives.cpp">
-      <Filter>05_BFS / DFS</Filter>
-    </ClCompile>
-    <ClCompile Include="10971_Traveling Salesman Problem 2.cpp">
-      <Filter>05_BFS / DFS</Filter>
-    </ClCompile>
-    <ClCompile Include="2667_Number Attach.cpp">
-      <Filter>05_BFS / DFS</Filter>
-    </ClCompile>
-    <ClCompile Include="2468_Safe Area.cpp">
-      <Filter>05_BFS / DFS</Filter>
-    </ClCompile>
-    <ClCompile Include="1697_Hide on bush.cpp">
-      <Filter>05_BFS / DFS</Filter>
-    </ClCompile>
-    <ClCompile Include="1389_Bacon%27s six laws.cpp">
-      <Filter>05_BFS / DFS</Filter>
-    </ClCompile>
-    <ClCompile Include="2583_Calculate Area.cpp">
-      <Filter>05_BFS / DFS</Filter>
     </ClCompile>
     <ClCompile Include="1181.cpp">
       <Filter>04_Sort</Filter>
@@ -184,9 +139,6 @@
     <ClCompile Include="23300_Web Browser.cpp">
       <Filter>03_Stack / Queue</Filter>
     </ClCompile>
-    <ClCompile Include="1463_Make It 1.cpp">
-      <Filter>05_BFS / DFS</Filter>
-    </ClCompile>
     <ClCompile Include="3986_Good Word.cpp">
       <Filter>03_Stack / Queue</Filter>
     </ClCompile>
@@ -196,11 +148,75 @@
     <ClCompile Include="1018_ChessBoard.cpp">
       <Filter>01_Implement</Filter>
     </ClCompile>
-    <ClCompile Include="1012_Cabbage.cpp" />
-    <ClCompile Include="7576_Tomato.cpp" />
-    <ClCompile Include="1926_Picture.cpp" />
-    <ClCompile Include="1325_Hacking.cpp" />
-    <ClCompile Include="11725_Find_TreeParent.cpp" />
+    <ClCompile Include="4963_Island Count.cpp">
+      <Filter>05_BFS / DFS\Miro</Filter>
+    </ClCompile>
+    <ClCompile Include="1012_Cabbage.cpp">
+      <Filter>05_BFS / DFS\Miro</Filter>
+    </ClCompile>
+    <ClCompile Include="1926_Picture.cpp">
+      <Filter>05_BFS / DFS\Miro</Filter>
+    </ClCompile>
+    <ClCompile Include="2178_Miro.cpp">
+      <Filter>05_BFS / DFS\Miro</Filter>
+    </ClCompile>
+    <ClCompile Include="2468_Safe Area.cpp">
+      <Filter>05_BFS / DFS\Miro</Filter>
+    </ClCompile>
+    <ClCompile Include="2583_Calculate Area.cpp">
+      <Filter>05_BFS / DFS\Miro</Filter>
+    </ClCompile>
+    <ClCompile Include="2667_Number Attach.cpp">
+      <Filter>05_BFS / DFS\Miro</Filter>
+    </ClCompile>
+    <ClCompile Include="1260_DFS BFS.cpp">
+      <Filter>05_BFS / DFS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="1325_Hacking.cpp">
+      <Filter>05_BFS / DFS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="1389_Bacon%27s six laws.cpp">
+      <Filter>05_BFS / DFS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="1463_Make It 1.cpp">
+      <Filter>05_BFS / DFS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="1697_Hide on bush.cpp">
+      <Filter>05_BFS / DFS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="2331_Repeat Number.cpp">
+      <Filter>05_BFS / DFS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="2606_Virus.cpp">
+      <Filter>05_BFS / DFS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="2644_Number of Relatives.cpp">
+      <Filter>05_BFS / DFS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="7576_Tomato.cpp">
+      <Filter>05_BFS / DFS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="10451_Permultation2.cpp">
+      <Filter>05_BFS / DFS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="10451_Permutation.cpp">
+      <Filter>05_BFS / DFS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="10971_Traveling Salesman Problem 2.cpp">
+      <Filter>05_BFS / DFS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="11724_Connect Count.cpp">
+      <Filter>05_BFS / DFS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="11725_Find_TreeParent.cpp">
+      <Filter>05_BFS / DFS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="15649_N&amp;M.cpp">
+      <Filter>05_BFS / DFS\Back Tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="15650_N&amp;M2.cpp">
+      <Filter>05_BFS / DFS\Back Tracking</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
@@ -223,6 +239,15 @@
     </Filter>
     <Filter Include="07_Dynamic Programming">
       <UniqueIdentifier>{28d2504d-20d2-426b-b6a1-a22b8f59bb6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05_BFS / DFS\Back Tracking">
+      <UniqueIdentifier>{ba721647-5e22-47f0-8015-42e05179087a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05_BFS / DFS\Miro">
+      <UniqueIdentifier>{d314a008-c454-4c6a-bd2f-c6c348582b51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05_BFS / DFS\Common">
+      <UniqueIdentifier>{5fdf3e64-e56a-4531-a12e-d478069820e7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
