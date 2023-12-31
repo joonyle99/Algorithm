@@ -217,6 +217,9 @@
     <ClCompile Include="15650_N&amp;M2.cpp">
       <Filter>05_BFS / DFS\Back Tracking</Filter>
     </ClCompile>
+    <ClCompile Include="15651_N&amp;M3.cpp">
+      <Filter>05_BFS / DFS\Back Tracking</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">

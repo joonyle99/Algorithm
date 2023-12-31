@@ -11,19 +11,22 @@ using std::cout;
 int N, M;
 
 std::vector<int> inputArray;
-std::vector<bool> visited;
 
-void DFS(int number, std::vector<int> numVector)
+// numVector는 계속해서 최신화된 정보를 가지고 가야함
+void DFS(int number, std::vector<bool> visited, std::vector<int> numVector)
 {
+	visited[number] = true;
 	numVector.push_back(number);
 
-	auto cnt = numVector.size();
+	const auto arrayCount = numVector.size();
 
-	if (cnt == M)
+	// M개의 수열 생성 완료
+	if (arrayCount == M)
 	{
-		for (int i = 0; i < cnt; ++i)
+		// 수열 출력 후 종료
+		for (int i = 0; i < arrayCount; ++i)
 		{
-			if (i == cnt - 1)
+			if (i == arrayCount - 1)
 				cout << numVector[i] << '\n';
 			else
 				cout << numVector[i] << " ";
@@ -35,11 +38,7 @@ void DFS(int number, std::vector<int> numVector)
 	for (int i = 1; i <= N; ++i)
 	{
 		if (!visited[i])
-		{
-			visited[i] = true;
-			DFS(i, numVector);
-			visited[i] = false;
-		}
+			DFS(i, visited, numVector);
 	}
 }
 
@@ -58,17 +57,15 @@ int main()
 	cin >> N >> M;
 
 	inputArray.resize(N + 1);
-	visited.resize(N + 1);
 
 	for (int i = 1; i <= N; ++i)
 		inputArray[i] = i;
 
 	for (int i = 1; i <= N; ++i)
 	{
+		std::vector<bool> visited(N + 1);
 		std::vector<int> numVector;
-		visited[i] = true;
-		DFS(i, numVector);
-		visited[i] = false;
+		DFS(i, visited, numVector);
 	}
 
 	return 0;

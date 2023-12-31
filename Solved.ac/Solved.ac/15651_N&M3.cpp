@@ -12,17 +12,8 @@ int N, M;
 
 std::vector<int> inputArray;
 
-void DFS(int number, std::vector<bool> visited, std::vector<int> numVector)
+void DFS(int number, std::vector<int> numVector)
 {
-    // 아무것도 없는데 numVector.back()로 요소 접근하는 것을 방지
-    if (!numVector.empty())
-    {
-        // 오름차순만 허용한다
-        if (numVector.back() > number)
-            return;
-    }
-
-    visited[number] = true;
     numVector.push_back(number);
 
     const auto arrayCount = numVector.size();
@@ -37,13 +28,13 @@ void DFS(int number, std::vector<bool> visited, std::vector<int> numVector)
                 cout << numVector[i] << " ";
         }
 
+        // Recursive를 멈추고 return
         return;
     }
 
     for (int i = 1; i <= N; ++i)
     {
-        if (!visited[i])
-            DFS(i, visited, numVector);
+        DFS(i, numVector);
     }
 }
 
@@ -55,7 +46,7 @@ int main()
     // Untie the streams that bind cin and cout (Output cout before cin's buffer is empty)
     std::cin.tie(nullptr);
 
-    // Title : N과 M (2)
+    // Title : N과 M (3)
 
     cin >> N >> M;
 
@@ -66,9 +57,8 @@ int main()
 
     for (int i = 1; i <= N; ++i)
     {
-        std::vector<bool> visited(N + 1);
         std::vector<int> numVector;
-        DFS(i, visited, numVector);
+        DFS(i, numVector);
     }
 
     return 0;
