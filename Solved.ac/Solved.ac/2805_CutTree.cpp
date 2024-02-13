@@ -29,9 +29,11 @@ int main()
 
 	long long result = 0;
 
+	/*
 	/// Brute Force
 
-	/*
+	int searchCount = 0;
+
 	// 절단기의 높이를 '가장 높은 나무의 높이'로 초기 설정한다
 	long long cuttingHeight = *std::max_element(treeHeights.begin(), treeHeights.end());
 	while (true)
@@ -49,10 +51,15 @@ int main()
 	  if (sumLength >= needLength)
 		break;
 
+	  searchCount++;
+
 	  cuttingHeight--;
 	}
 	// 결과값에 절단기의 높이를 저장한다
 	result = cuttingHeight;
+
+	std::cout << "Answer : " << result << '\n';
+	std::cout << "Brute Force Count : " << searchCount << '\n';
 	*/
 
 	/// Binary Search
@@ -106,7 +113,8 @@ int main()
 	}
 
 	result = maxCuttingHeight;
-	std::cout << result << '\n';
+	std::cout << "Answer : " << result << '\n';
+	std::cout << "Binary Search Count : " << searchDepth << '\n';
 
 	/// 중요 포인트
 	// min = current + 1;
@@ -123,8 +131,6 @@ int main()
 	// 영원히 while()문을 나올 수 없게 된다
 	//
 	// 이진 탐색에서 적절히 탐색 범위를 좁히기 위해서는 +1과 -1은 필수이다
-
-	std::cout << "이진 탐색의 깊이 : " << searchDepth << '\n';
 
 	return 0;
 }
