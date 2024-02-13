@@ -220,6 +220,9 @@
     <ClCompile Include="15651_N&amp;M3.cpp">
       <Filter>05_BFS / DFS\Back Tracking</Filter>
     </ClCompile>
+    <ClCompile Include="2805_CutTree.cpp">
+      <Filter>06_Binary Serach</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
