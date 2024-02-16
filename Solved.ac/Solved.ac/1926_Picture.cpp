@@ -8,7 +8,7 @@
 using std::cin;
 using std::cout;
 
-int n, m;
+int length, m;
 
 // 지도
 int map[500][500] = {};
@@ -39,7 +39,7 @@ int BFS(int startY, int startX)
 			std::pair<int, int> nextPos(front.first + dx[i], front.second + dy[i]);
 
 			// 지도를 넘어가면 다시 탐색
-			if (nextPos.first < 0 || nextPos.second < 0 || nextPos.first > m - 1 || nextPos.second > n - 1)
+			if (nextPos.first < 0 || nextPos.second < 0 || nextPos.first > m - 1 || nextPos.second > length - 1)
 				continue;
 
 			// 방문 정보와 지도 정보를 가지고 탐색 결정
@@ -65,13 +65,13 @@ int main()
 
 	// Title : 그림
 
-	cin >> n >> m;
+	cin >> length >> m;
 
 	int maxInnerCount = 0;
 	int outterCount = 0;
 
 	// 지도 세팅
-	for (int i = 0; i < n; ++i)
+	for (int i = 0; i < length; ++i)
 	{
 		for (int j = 0; j < m; ++j)
 		{
@@ -80,7 +80,7 @@ int main()
 	}
 
 	// 모든 지도를 돌면서 BFS 탐색
-	for (int i = 0; i < n; ++i)
+	for (int i = 0; i < length; ++i)
 	{
 		for (int j = 0; j < m; ++j)
 		{
