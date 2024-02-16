@@ -223,6 +223,21 @@
     <ClCompile Include="2805_CutTree.cpp">
       <Filter>06_Binary Serach</Filter>
     </ClCompile>
+    <ClCompile Include="BadCode_For_CodingTest.cpp">
+      <Filter>BaaaarkingDog_Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="NiceCode_For_CodingTest.cpp">
+      <Filter>BaaaarkingDog_Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="arrayTest.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="vectorTest.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="sum_100_optimize.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Array</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
@@ -254,6 +269,12 @@
     </Filter>
     <Filter Include="05_BFS / DFS\Common">
       <UniqueIdentifier>{5fdf3e64-e56a-4531-a12e-d478069820e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaaaarkingDog_Algorithm">
+      <UniqueIdentifier>{8142395d-a259-4669-81bc-f2c026f32070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaaaarkingDog_Algorithm\Array">
+      <UniqueIdentifier>{e943efeb-48c1-4266-be58-7a5da1e618f0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
