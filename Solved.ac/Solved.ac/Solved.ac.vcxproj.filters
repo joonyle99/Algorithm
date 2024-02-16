@@ -238,6 +238,30 @@
     <ClCompile Include="sum_100_optimize.cpp">
       <Filter>BaaaarkingDog_Algorithm\Array</Filter>
     </ClCompile>
+    <ClCompile Include="2577.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="1475.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="3273.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="10807.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="13300.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="11328.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="1919.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="Note.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Array</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">

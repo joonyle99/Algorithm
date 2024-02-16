@@ -2,6 +2,13 @@
 using namespace std;
 
 void insert(int idx, int num, int arr[], int& len) {
+	// 이 부분이 헷갈린다 ** 복습하자 **
+	// out of range를 고려해서
+	// ** 노트나 종이에 잘 구상을 해두고 구현하면 덜 헷갈릴 것이다 **
+	// len vs len - 1
+	// i > idx vs i >= idx
+	// 오른쪽부터 밀어준다 (왼쪽부터 하면 임시 변수 생성해야 해서 추가 메모리 사용)
+	// 당겨서 '가져온다'는 느낌으로 '보내준다'가 아니라
 	for (int i = len; i > idx; --i) {
 		arr[i] = arr[i - 1];
 	}
@@ -10,6 +17,10 @@ void insert(int idx, int num, int arr[], int& len) {
 }
 
 void erase(int idx, int arr[], int& len) {
+	// 이 부분이 헷갈린다 ** 복습하자 **
+	// 왜 len부터 빼주는지를 생각하자
+	// 왼쪽부터 당겨준다 (오른족부터 하면 임시 변수 생성해야 해서 추가 메모리 사용)
+	// 당겨서 '가져온다'는 느낌으로 '보내준다'가 아니라
 	len--;
 	for (int i = idx; i < len; ++i) {
 		arr[i] = arr[i + 1];
