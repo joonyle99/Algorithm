@@ -259,8 +259,41 @@
     <ClCompile Include="1919.cpp">
       <Filter>BaaaarkingDog_Algorithm\Array</Filter>
     </ClCompile>
-    <ClCompile Include="Note.cpp">
+    <ClCompile Include="_note_array.cpp">
       <Filter>BaaaarkingDog_Algorithm\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="_note_linkedList.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Linked List</Filter>
+    </ClCompile>
+    <ClCompile Include="linkedListTest.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Linked List</Filter>
+    </ClCompile>
+    <ClCompile Include="linkedListExample.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Linked List</Filter>
+    </ClCompile>
+    <ClCompile Include="1406.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Linked List</Filter>
+    </ClCompile>
+    <ClCompile Include="hand_coding_1.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Linked List</Filter>
+    </ClCompile>
+    <ClCompile Include="hand_coding_2.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Linked List</Filter>
+    </ClCompile>
+    <ClCompile Include="5397.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Linked List</Filter>
+    </ClCompile>
+    <ClCompile Include="1158.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Linked List</Filter>
+    </ClCompile>
+    <ClCompile Include="_note_sort1.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+    </ClCompile>
+    <ClCompile Include="11728.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+    </ClCompile>
+    <ClCompile Include="sort_library.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -299,6 +332,12 @@
     </Filter>
     <Filter Include="BaaaarkingDog_Algorithm\Array">
       <UniqueIdentifier>{e943efeb-48c1-4266-be58-7a5da1e618f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaaaarkingDog_Algorithm\Linked List">
+      <UniqueIdentifier>{f38f3459-8d69-4dad-8ca9-d72db481fc54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaaaarkingDog_Algorithm\Sort1">
+      <UniqueIdentifier>{b3b18933-4b8e-4367-b116-a4d2f856dcb8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
