@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void MergeSort(vector<int>& arr1, vector<int>& arr2, int n)
+void Merge(vector<int>& arr1, vector<int>& arr2, int n)
 {
 	// 하나의 정렬된 리스트로 합치는 병합 정렬 알고리즘의 핵심 단계
 	vector<int> arr12(n);
@@ -34,7 +34,7 @@ void MergeSort(vector<int>& arr1, vector<int>& arr2, int n)
 	}
 }
 
-void MergeSort_BaaarkingDog(vector<int>& arr1, vector<int>& arr2, int n)
+void Merge_BaaarkingDog(vector<int>& arr1, vector<int>& arr2, int n)
 {
 	vector<int> arr12(n);
 	int aIndex = 0, bIndex = 0;
@@ -73,7 +73,7 @@ int main()
 		cin >> arr2[i];
 	}
 
-	MergeSort_BaaarkingDog(arr1, arr2, N + M);
+	Merge_BaaarkingDog(arr1, arr2, N + M);
 
 	return 0;
 }

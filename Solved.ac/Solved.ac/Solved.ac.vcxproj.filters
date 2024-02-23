@@ -295,6 +295,18 @@
     <ClCompile Include="sort_library.cpp">
       <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
     </ClCompile>
+    <ClCompile Include="merge_sort_test.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+    </ClCompile>
+    <ClCompile Include="2751.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
@@ -339,5 +351,16 @@
     <Filter Include="BaaaarkingDog_Algorithm\Sort1">
       <UniqueIdentifier>{b3b18933-4b8e-4367-b116-a4d2f856dcb8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{83e0de17-9930-4ca2-9944-17787d2d2edf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Random.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Util</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

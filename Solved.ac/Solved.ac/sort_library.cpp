@@ -1,3 +1,4 @@
+#include "Timer.h"
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -27,7 +28,7 @@ void BubbleSort(vector<int>& arr, int n)
 	}
 }
 
-void MergeSort(vector<int>& arr1, vector<int>& arr2, int n)
+void Merge(vector<int>& arr1, vector<int>& arr2, int n)
 {
 	// 하나의 정렬된 리스트로 합치는 병합 정렬 알고리즘의 핵심 단계
 	// cf ) 그걸 그냥 하나로 합쳐버리고 한번에 버블 정렬로 한다면 O((N + M) ^ 2)
@@ -87,7 +88,6 @@ int main()
 	// 정렬된 두 리스트
 	sort(arr1.begin(), arr1.end());
 	sort(arr2.begin(), arr2.end());
-
 
 	return 0;
 }
