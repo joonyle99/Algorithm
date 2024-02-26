@@ -307,6 +307,24 @@
     <ClCompile Include="Timer.cpp">
       <Filter>Util</Filter>
     </ClCompile>
+    <ClCompile Include="quick_sort_test.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+    </ClCompile>
+    <ClCompile Include="merge_sort_practice.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+    </ClCompile>
+    <ClCompile Include="10989.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+    </ClCompile>
+    <ClCompile Include="11931.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+    </ClCompile>
+    <ClCompile Include="15688.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+    </ClCompile>
+    <ClCompile Include="10814.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
