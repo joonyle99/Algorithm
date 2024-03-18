@@ -325,6 +325,21 @@
     <ClCompile Include="10814.cpp">
       <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
     </ClCompile>
+    <ClCompile Include="_note_stack.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Stack / Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="10828.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Stack / Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="_note_queue.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Stack / Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="10845.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Stack / Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="_note_deque.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Stack / Queue</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
@@ -371,6 +386,9 @@
     </Filter>
     <Filter Include="Util">
       <UniqueIdentifier>{83e0de17-9930-4ca2-9944-17787d2d2edf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaaaarkingDog_Algorithm\Stack / Queue">
+      <UniqueIdentifier>{83ca0224-ad13-4852-8840-473a77d42fee}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
