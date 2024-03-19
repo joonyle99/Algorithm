@@ -326,19 +326,25 @@
       <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
     </ClCompile>
     <ClCompile Include="_note_stack.cpp">
-      <Filter>BaaaarkingDog_Algorithm\Stack / Queue</Filter>
+      <Filter>BaaaarkingDog_Algorithm\Stack / Queue / Deque</Filter>
     </ClCompile>
     <ClCompile Include="10828.cpp">
-      <Filter>BaaaarkingDog_Algorithm\Stack / Queue</Filter>
+      <Filter>BaaaarkingDog_Algorithm\Stack / Queue / Deque</Filter>
     </ClCompile>
     <ClCompile Include="_note_queue.cpp">
-      <Filter>BaaaarkingDog_Algorithm\Stack / Queue</Filter>
+      <Filter>BaaaarkingDog_Algorithm\Stack / Queue / Deque</Filter>
     </ClCompile>
     <ClCompile Include="10845.cpp">
-      <Filter>BaaaarkingDog_Algorithm\Stack / Queue</Filter>
+      <Filter>BaaaarkingDog_Algorithm\Stack / Queue / Deque</Filter>
     </ClCompile>
     <ClCompile Include="_note_deque.cpp">
-      <Filter>BaaaarkingDog_Algorithm\Stack / Queue</Filter>
+      <Filter>BaaaarkingDog_Algorithm\Stack / Queue / Deque</Filter>
+    </ClCompile>
+    <ClCompile Include="_note_simulation.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="15683_badcase.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Simulation</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -387,8 +393,11 @@
     <Filter Include="Util">
       <UniqueIdentifier>{83e0de17-9930-4ca2-9944-17787d2d2edf}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BaaaarkingDog_Algorithm\Stack / Queue">
+    <Filter Include="BaaaarkingDog_Algorithm\Stack / Queue / Deque">
       <UniqueIdentifier>{83ca0224-ad13-4852-8840-473a77d42fee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaaaarkingDog_Algorithm\Simulation">
+      <UniqueIdentifier>{570c5af3-2a48-40c7-bafd-fe6fc9cd638f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
