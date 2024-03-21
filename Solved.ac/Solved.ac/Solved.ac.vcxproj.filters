@@ -355,6 +355,9 @@
     <ClCompile Include="2164_2.cpp">
       <Filter>BaaaarkingDog_Algorithm\Stack / Queue / Deque</Filter>
     </ClCompile>
+    <ClCompile Include="1021.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Stack / Queue / Deque</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">

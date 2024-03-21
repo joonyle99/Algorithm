@@ -282,3 +282,63 @@ public:
 	}
 };
 ```
+
+===========================================================
+### Deque (배열로 구현)
+===========================================================
+
+```c++
+class ArrayDequeue
+{
+public:
+	int array[100000 * 2 + 1];
+	int head = 100000, tail = 100000;
+
+public:
+	int Size() const
+	{
+		return tail - head;
+	}
+	bool Empty() const
+	{
+		return (head == tail);
+	}
+	int Front() const
+	{
+		return array[head];
+	}
+	int Back() const
+	{
+		return array[tail - 1];
+	}
+
+public:
+	void PrintAll() const
+	{
+		for (int i = head; i < tail; ++i)
+		{
+			cout << array[i] << ' ';
+		}
+
+		cout << '\n';
+	}
+
+public:
+	void Push_front(int x)
+	{
+		array[--head] = x;
+	}
+	void Push_back(int x)
+	{
+		array[tail++] = x;
+	}
+	int Pop_front()
+	{
+		return array[head++];
+	}
+	int Pop_back()
+	{
+		return array[--tail];
+	}
+};
+```
