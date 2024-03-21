@@ -346,6 +346,9 @@
     <ClCompile Include="15683_badcase.cpp">
       <Filter>BaaaarkingDog_Algorithm\Simulation</Filter>
     </ClCompile>
+    <ClCompile Include="2493.cpp">
+      <Filter>BaaaarkingDog_Algorithm\Stack / Queue / Deque</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
