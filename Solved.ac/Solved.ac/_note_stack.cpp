@@ -14,6 +14,13 @@
 //
 // 구현 : '배열' or '연결 리스트'를 이용해서 구현이 가능하다
 
+/// monotone stack이란?
+// -> 스택 내부를 오름차순 또는 내림차순으로 유지 해주는 알고리즘
+// https ://justicehui.github.io/medium-algorithm/2019/01/01/monotoneStack/
+// -> 해당 알고리즘으로 O(N)의 시간 복잡도 정도로 줄여주는 강력한 테크닉
+// 한 건물 한건물을 추가할때마다 stack 에 자기보다 큰놈들만 냅두기
+// ->여기서 monotone stack 사용
+
 #include <bits/stdc++.h>
 using namespace std;
 

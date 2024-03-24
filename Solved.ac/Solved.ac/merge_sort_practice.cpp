@@ -2,7 +2,7 @@
 using namespace std;
 
 int n = 10;
-int arr[1000001] = { 15, 25, 22, 357, 16, 23, -53, 12, 46, 3 };
+int heightArr[1000001] = { 15, 25, 22, 357, 16, 23, -53, 12, 46, 3 };
 int tmp[1000001] = {};
 
 // 1. Stable Sort의 성질을 가지고 있다
@@ -17,16 +17,16 @@ void merge(int st, int en)
 	for (int i = st; i < en; ++i)
 	{
 		// leftIndex가 꽉찬 경우
-		if (leftIndex >= mid) tmp[i] = arr[rightIndex++];
+		if (leftIndex >= mid) tmp[i] = heightArr[rightIndex++];
 		// rightIndex가 꽉찬 경우
-		else if (rightIndex >= en) tmp[i] = arr[leftIndex++];
+		else if (rightIndex >= en) tmp[i] = heightArr[leftIndex++];
 		// left의 값이 right의 값 보다 작은 경우
-		else if (arr[leftIndex] < arr[rightIndex]) tmp[i] = arr[leftIndex++];
-		else tmp[i] = arr[rightIndex++];
+		else if (heightArr[leftIndex] < heightArr[rightIndex]) tmp[i] = heightArr[leftIndex++];
+		else tmp[i] = heightArr[rightIndex++];
 	}
 	for (int i = st; i < en; ++i)
 	{
-		arr[i] = tmp[i];
+		heightArr[i] = tmp[i];
 	}
 }
 
@@ -49,7 +49,7 @@ int main()
 
 	merge_sort(0, n);
 
-	for (int i = 0; i < n; i++) cout << arr[i] << ' ';  // -53 3 12 15 16 22 23 25 46 357
+	for (int i = 0; i < n; i++) cout << heightArr[i] << ' ';  // -53 3 12 15 16 22 23 25 46 357
 
 	return 0;
 }

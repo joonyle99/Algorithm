@@ -47,7 +47,7 @@ void quick_sort(int st, int en)
 }
 */
 
-int arr[1000005] = {};
+int heightArr[1000005] = {};
 int tmp[1000005] = {};
 
 void merge(int st, int en)
@@ -66,13 +66,13 @@ void merge(int st, int en)
 	for (int i = st; i < en; ++i)
 	{
 		// 왼쪽 리스트가 이미 다 소진된 경우 (mid는 오른쪽 요소의 첫번째 요소 index임)
-		if (leftIndex >= mid) tmp[i] = arr[rightIndex++];
+		if (leftIndex >= mid) tmp[i] = heightArr[rightIndex++];
 		// 오른쪽 리스트가 이미 다 소진된 경우 (en는 오른쪽 요소의 끝에서 한 칸 더 간 index임)
-		else if (rightIndex >= en)  tmp[i] = arr[leftIndex++];
+		else if (rightIndex >= en)  tmp[i] = heightArr[leftIndex++];
 		// 왼쪽 리스트의 값이 오른쪽 리스트의 값보다 작거나 같은 경우
-		else if (arr[leftIndex] <= arr[rightIndex]) tmp[i] = arr[leftIndex++];
+		else if (heightArr[leftIndex] <= heightArr[rightIndex]) tmp[i] = heightArr[leftIndex++];
 		// 오른쪽 리스트의 값이 왼쪽 리스트의 값보다 작은 경우
-		else tmp[i] = arr[rightIndex++];
+		else tmp[i] = heightArr[rightIndex++];
 	}
 
 	// tmp에 담아둔 값을 arr로 복사해준다
@@ -80,7 +80,7 @@ void merge(int st, int en)
 	// arr 하나만 가지고는, 두 리스트를 하나의 리스트로 합치는 작업을 할 수 없기 때문이다.
 	for (int i = st; i < en; ++i)
 	{
-		arr[i] = tmp[i];
+		heightArr[i] = tmp[i];
 	}
 }
 
@@ -126,12 +126,12 @@ int main()
 
 	int N; cin >> N;
 
-	for (int i = 0; i < N; ++i) cin >> arr[i];
+	for (int i = 0; i < N; ++i) cin >> heightArr[i];
 
 	// quick_sort(0, N);		// 시간 초과로 인해서 quick_sort를 사용할 수 없다. 최악의 시간 복잡도 O(N^2)이기 때문이다
 	merge_sort(0, N);		// O(NlogN)의 시간복잡도가 보장되는 merge_sort를 사용한다
 
-	for (int i = 0; i < N; ++i) cout << arr[i] << '\n';
+	for (int i = 0; i < N; ++i) cout << heightArr[i] << '\n';
 
 	return 0;
 }
