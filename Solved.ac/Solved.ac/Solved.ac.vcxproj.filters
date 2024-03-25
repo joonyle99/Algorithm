@@ -377,6 +377,12 @@
     <ClCompile Include="10799.cpp">
       <Filter>BaaaarkingDog_Algorithm\03_Stack</Filter>
     </ClCompile>
+    <ClCompile Include="_note_bfs.cpp">
+      <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="1926_2.cpp">
+      <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
