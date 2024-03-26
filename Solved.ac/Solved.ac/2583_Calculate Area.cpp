@@ -21,7 +21,7 @@ struct Position
 	{}
 };
 
-int visited[101][101];
+int dist[101][101];
 
 int BFS(Position startPos)
 {
@@ -29,7 +29,7 @@ int BFS(Position startPos)
 
 	std::queue<Position> myQueue;
 	myQueue.push(startPos);
-	visited[startPos.y][startPos.x] = 1;
+	dist[startPos.y][startPos.x] = 1;
 
 	while (!myQueue.empty())
 	{
@@ -43,9 +43,9 @@ int BFS(Position startPos)
 			if (nextPos.x < 0 || nextPos.y < 0 || nextPos.x >= N || nextPos.y >= M)
 				continue;
 
-			if (visited[nextPos.y][nextPos.x] != 1)
+			if (dist[nextPos.y][nextPos.x] != 1)
 			{
-				visited[nextPos.y][nextPos.x] = 1;
+				dist[nextPos.y][nextPos.x] = 1;
 				myQueue.push(nextPos);
 				innerCount++;
 			}
@@ -77,7 +77,7 @@ int main()
 		{
 			for (int y = bl_y; y < tr_y; ++y)
 			{
-				visited[y][x] = 1;
+				dist[y][x] = 1;
 			}
 		}
 	}
@@ -101,7 +101,7 @@ int main()
 		for (int x = 0; x < N; ++x)
 		{
 			Position curPos(x, y);
-			if (!visited[curPos.y][curPos.x])
+			if (!dist[curPos.y][curPos.x])
 			{
 				innerCountArr.push_back(BFS(curPos));
 				outterCount++;
