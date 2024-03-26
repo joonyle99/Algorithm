@@ -19,7 +19,7 @@ void insert(int idx, int num, int arr[], int& len) {
 void erase(int idx, int arr[], int& len) {
 	// 이 부분이 헷갈린다 ** 복습하자 **
 	// 왜 len부터 빼주는지를 생각하자
-	// 왼쪽부터 당겨준다 (오른족부터 하면 임시 변수 생성해야 해서 추가 메모리 사용)
+	// 왼쪽부터 당겨준다 (오른쪽부터 하면 임시 변수 생성해야 해서 추가 메모리 사용)
 	// 당겨서 '가져온다'는 느낌으로 '보내준다'가 아니라
 	len--;
 	for (int i = idx; i < len; ++i) {
