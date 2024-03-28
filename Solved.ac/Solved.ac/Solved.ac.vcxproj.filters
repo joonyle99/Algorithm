@@ -389,6 +389,9 @@
     <ClCompile Include="7576.cpp">
       <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
     </ClCompile>
+    <ClCompile Include="problem2.cpp">
+      <Filter>BaaaarkingDog_Algorithm\01_Array</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
