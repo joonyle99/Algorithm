@@ -6,13 +6,13 @@ using namespace std;
 
 int n, m;
 int board[501][501];
-int visited[501][501];
+int visited_J[501][501];
 
 int resCount = 0;
 int resSize = 0;
 
-int dx[4] = { 0, 1, 0, -1 };
-int dy[4] = { -1, 0,1, 0 };
+int deltaCol[4] = { 0, 1, 0, -1 };
+int deltaRow[4] = { -1, 0,1, 0 };
 
 typedef pair<int, int> pos;
 
@@ -20,7 +20,7 @@ int BFS(int x, int y)
 {
 	queue<pos> myQueue;
 	myQueue.push(make_pair(x, y));
-	visited[y][x] = 1;
+	visited_J[y][x] = 1;
 	int cnt = 1;
 
 	while (!myQueue.empty())
@@ -29,11 +29,11 @@ int BFS(int x, int y)
 		myQueue.pop();
 		for (int i = 0; i < 4; ++i)
 		{
-			pos nextPos = make_pair(curPos.X + dx[i], curPos.Y + dy[i]);
+			pos nextPos = make_pair(curPos.X + deltaCol[i], curPos.Y + deltaRow[i]);
 			if (nextPos.X >= 500 || nextPos.X < 0 || nextPos.Y >= 500 || nextPos.Y < 0) continue;
-			if (visited[nextPos.Y][nextPos.X] == 1 || board[nextPos.Y][nextPos.X] != 1) continue;
+			if (visited_J[nextPos.Y][nextPos.X] == 1 || board[nextPos.Y][nextPos.X] != 1) continue;
 			myQueue.push(nextPos);
-			visited[nextPos.Y][nextPos.X] = 1;
+			visited_J[nextPos.Y][nextPos.X] = 1;
 			cnt++;
 		}
 	}
@@ -66,7 +66,7 @@ int main()
 	{
 		for (int j = 0; j < m; ++j)
 		{
-			if (visited[i][j] == 1) continue;	// if문 작성할때 아닌 경우를 return break continue 하는게 좀 더 직관적이다
+			if (visited_J[i][j] == 1) continue;	// if문 작성할때 아닌 경우를 return break continue 하는게 좀 더 직관적이다
 			if (board[i][j] == 0) continue;
 
 			resSize = max(resSize, BFS(j, i));	// 가장 적은 resSize 개수는 0개이기 때문에 0으로 초기화 해줘야 한다

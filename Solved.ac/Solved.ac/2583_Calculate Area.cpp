@@ -10,8 +10,8 @@ using std::cout;
 
 int M, N, K;
 
-int dx[4] = { 0,0,-1,1 };
-int dy[4] = { -1,1, 0,0 };
+int deltaCol[4] = { 0,0,-1,1 };
+int deltaRow[4] = { -1,1, 0,0 };
 
 struct Position
 {
@@ -38,7 +38,7 @@ int BFS(Position startPos)
 
 		for (int k = 0; k < 4; ++k)
 		{
-			Position nextPos(curPos.x + dx[k], curPos.y + dy[k]);
+			Position nextPos(curPos.x + deltaCol[k], curPos.y + deltaRow[k]);
 
 			if (nextPos.x < 0 || nextPos.y < 0 || nextPos.x >= N || nextPos.y >= M)
 				continue;

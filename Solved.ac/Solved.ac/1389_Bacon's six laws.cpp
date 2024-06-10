@@ -9,12 +9,12 @@ using std::cin;
 using std::cout;
 
 std::vector<std::vector<int>> vecArr;
-std::vector<bool> visited;
+std::vector<bool> visited_J;
 
 void ResetVisited()
 {
-	for (int i = 0; i < visited.size(); ++i)
-		visited[i] = false;
+	for (int i = 0; i < visited_J.size(); ++i)
+		visited_J[i] = false;
 }
 
 // user에서 target까지 최소 connect count 구하기
@@ -25,7 +25,7 @@ int GetMinConnectEachPerson(int start, int target)
 	// 이 문제에서의 핵심 포인트 : Queue에 (사람 번호)와 (거쳐온 횟수)를 함께 가지고 있도록 한다.
 	std::queue<std::pair<int, int>> myQueue;
 	myQueue.push(std::make_pair(start, 0));
-	visited[start] = true;
+	visited_J[start] = true;
 
 	while (!myQueue.empty())
 	{
@@ -43,10 +43,10 @@ int GetMinConnectEachPerson(int start, int target)
 		{
 			int myFriend = vecArr[fromInfo.first][i];
 
-			if (!visited[myFriend])
+			if (!visited_J[myFriend])
 			{
 				myQueue.push(std::make_pair(myFriend, fromInfo.second + 1));
-				visited[myFriend] = true;
+				visited_J[myFriend] = true;
 			}
 		}
 	}
@@ -85,7 +85,7 @@ int main()
 	int M; cin >> M;
 
 	vecArr.resize(N + 1);
-	visited.resize(N + 1);
+	visited_J.resize(N + 1);
 
 	while (M-- > 0)
 	{

@@ -4,8 +4,8 @@ using namespace std;
 int M, N;
 int board[1001][1001];
 int dist[1001][1001];
-int dx[4] = { 0, 1, 0, -1 };
-int dy[4] = { 1, 0, -1, 0 };
+int deltaCol[4] = { 0, 1, 0, -1 };
+int deltaRow[4] = { 1, 0, -1, 0 };
 queue<pair<int, int>> q;
 
 void init()
@@ -49,7 +49,7 @@ int main()
 		q.pop();
 		for (int i = 0; i < 4; ++i)
 		{
-			pair<int, int> nextPos = make_pair(curPos.first + dx[i], curPos.second + dy[i]);
+			pair<int, int> nextPos = make_pair(curPos.first + deltaCol[i], curPos.second + deltaRow[i]);
 			if (nextPos.first >= M || nextPos.first < 0 || nextPos.second >= N || nextPos.second < 0) continue;
 			if (board[nextPos.second][nextPos.first] != 0) continue;
 			if (dist[nextPos.second][nextPos.first] != 0) continue;

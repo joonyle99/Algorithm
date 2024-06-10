@@ -31,7 +31,7 @@ int N, M;
 int map[102][102];
 
 // 미로 방문 여부
-int visited[102][102];
+int visited_J[102][102];
 
 // 상하좌우 배열
 int dirX[4] = { 0,0,-1,1 };
@@ -94,13 +94,13 @@ void DFS(Position pos, int depth)
 		Position nextPos(pos.x + dirX[i], pos.y + dirY[i]);
 
 		// 갈 수 있다
-		if (visited[nextPos.y][nextPos.x] == false && map[nextPos.y][nextPos.x] == true)
+		if (visited_J[nextPos.y][nextPos.x] == false && map[nextPos.y][nextPos.x] == true)
 		{
-			visited[nextPos.y][nextPos.x] = true;
+			visited_J[nextPos.y][nextPos.x] = true;
 			DFS(nextPos, depth + 1);
 
 			// 실패한 경로를 다시 초기화
-			visited[nextPos.y][nextPos.x] = false;
+			visited_J[nextPos.y][nextPos.x] = false;
 		}
 	}
 }
@@ -117,7 +117,7 @@ int BFS(Position startPos)
 
 	// 시작점 세팅
 	myQueue.push(startPos);
-	visited[startPos.y][startPos.x] = true;
+	visited_J[startPos.y][startPos.x] = true;
 	distMap[startPos.y][startPos.x] = 1;
 
 	// 큐에 값이 있는 동안 계속해서 반복
@@ -131,13 +131,13 @@ int BFS(Position startPos)
 			Position nextPos(myQueue.front().x + dirX[i], myQueue.front().y + dirY[i]);
 
 			// 갈 수 있다면
-			if (visited[nextPos.y][nextPos.x] == false && map[nextPos.y][nextPos.x] == true)
+			if (visited_J[nextPos.y][nextPos.x] == false && map[nextPos.y][nextPos.x] == true)
 			{
 				// Queue에 넣어둔다.
 				myQueue.push(nextPos);
 
 				// 방문 처리
-				visited[nextPos.y][nextPos.x] = true;
+				visited_J[nextPos.y][nextPos.x] = true;
 
 				// 거리 계산 (누적)
 				distMap[nextPos.y][nextPos.x] = distMap[myQueue.front().y][myQueue.front().x] + 1;
@@ -166,7 +166,7 @@ int main()
 	curPos = { 1, 1 };
 
 	// 시작 위치는 이미 방문한 상태
-	visited[curPos.y][curPos.x] = true;
+	visited_J[curPos.y][curPos.x] = true;
 
 	// 미로 생성
 	for (int i = 1; i <= N; ++i)

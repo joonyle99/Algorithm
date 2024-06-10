@@ -8,14 +8,14 @@ using namespace std;
 std::vector<std::vector<int>> graphs;
 
 // 방문처리를 위한 변수 선언
-bool visited[1001] = { false, };
+bool visited_J[1001] = { false, };
 
 void DFS(int node)
 {
-	if (visited[node] == false)
+	if (visited_J[node] == false)
 	{
 		// 방문 처리
-		visited[node] = true;
+		visited_J[node] = true;
 
 		for (int i = 0; i < graphs[node].size(); ++i)
 		{
@@ -55,7 +55,7 @@ int main()
 	for (int i = 1; i <= N; ++i)
 	{
 		// 방문하지 않았으면 탐색
-		if (visited[i] == false)
+		if (visited_J[i] == false)
 		{
 			// 각 연결 요소에 들어가서 탐색
 			DFS(i);

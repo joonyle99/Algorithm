@@ -4,10 +4,10 @@ using namespace std;
 int M, N, K;
 
 int ground[55][55];
-int visited[55][55];
+int visited_J[55][55];
 
-int dx[4] = { 0, 0, -1, 1 };
-int dy[4] = { -1, 1, 0, 0 };
+int deltaCol[4] = { 0, 0, -1, 1 };
+int deltaRow[4] = { -1, 1, 0, 0 };
 
 int result = 0;
 
@@ -28,7 +28,7 @@ void Reset(int M, int N)
 	{
 		for (int j = 0; j < M; ++j)
 		{
-			visited[i][j] = 0;
+			visited_J[i][j] = 0;
 		}
 	}
 }
@@ -37,7 +37,7 @@ void BFS(int x, int y) {
 
 	queue<Pos> myQueue;
 	myQueue.push(make_pair(x, y));
-	visited[y][x] = 1;
+	visited_J[y][x] = 1;
 
 	int count = 0;
 
@@ -46,7 +46,7 @@ void BFS(int x, int y) {
 		myQueue.pop();
 
 		for (int i = 0; i < 4; i++) {
-			Pos next = make_pair(now.first + dx[i], now.second + dy[i]);
+			Pos next = make_pair(now.first + deltaCol[i], now.second + deltaRow[i]);
 
 			// 땅 범위를 벗어난 경우
 			if (next.second < 0 || next.second > N - 1 || next.first < 0 || next.first > M - 1)
@@ -55,11 +55,11 @@ void BFS(int x, int y) {
 			if (ground[next.second][next.first] == 0)
 				continue;
 			// 방문한 배추인 경우
-			if (visited[next.second][next.first] == 1)
+			if (visited_J[next.second][next.first] == 1)
 				continue;
 
 			myQueue.push(make_pair(next.first, next.second));
-			visited[next.second][next.first] = true;
+			visited_J[next.second][next.first] = true;
 		}
 
 		count++;
@@ -95,7 +95,7 @@ int main()
 				if (ground[i][j] == 0)
 					continue;
 				// 이미 방문한 배추인 경우
-				if (visited[i][j] == 1)
+				if (visited_J[i][j] == 1)
 					continue;
 
 				BFS(j, i);

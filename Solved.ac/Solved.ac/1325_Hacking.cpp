@@ -9,7 +9,7 @@ using std::cout;
 std::vector<std::vector<int>> reverseTrustList;
 
 // 방문 정보
-bool visited[10001] = {};
+bool visited_J[10001] = {};
 
 // 해킹 가능 횟수
 int hackingCount = 0;
@@ -26,13 +26,13 @@ bool compare(std::pair<int, int> a, std::pair<int, int> b)
 void ResetVisited()
 {
 	for(int i=0; i<10001; ++i)
-		visited[i] = false;
+		visited_J[i] = false;
 }
 
 void DFS(int parentNode)
 {
 	// targetNumber를 방문처리
-	visited[parentNode] = true;
+	visited_J[parentNode] = true;
 
 	// 자신을 신뢰하는 모든 컴퓨터를 "동시에" 해킹할 수 있다.
 	hackingCount++;
@@ -42,7 +42,7 @@ void DFS(int parentNode)
 	{
 		int targetNumber = reverseTrustList[parentNode][i];
 
-		if (!visited[targetNumber])
+		if (!visited_J[targetNumber])
 			DFS(targetNumber);
 	}
 }

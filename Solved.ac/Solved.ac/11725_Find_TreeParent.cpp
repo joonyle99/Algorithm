@@ -12,7 +12,7 @@ int N;
 std::vector<std::vector<int>> tree(100001);
 
 // 노드의 정점에 대한 방문처리
-bool visited[100001] = {};
+bool visited_J[100001] = {};
 
 // 부모 노드를 저장 (index : 자식 번호, value : 부모 번호)
 std::vector<int> parentArr(100001);
@@ -22,7 +22,7 @@ void DFS(int parentNode)
 {
 	// 노드는 "부모 노드"의 입장으로 진입한다.
 	// 방문 처리
-	visited[parentNode] = true;
+	visited_J[parentNode] = true;
 
 	// 부모 노드의 모든 자식들을 순회하며, 자식들의 부모를 결정
 	for (int i = 0; i < tree[parentNode].size(); ++i)
@@ -31,7 +31,7 @@ void DFS(int parentNode)
 		int childNode = tree[parentNode][i];
 
 		// * 방문 정보를 검사하는 이유는 자식 노드만 가져오기 위함 *
-		if (!visited[childNode])
+		if (!visited_J[childNode])
 		{
 			// 깊이 우선 탐색을 위한 "재귀 함수"를 실행한다. (해당 노드를 부모 노드로 입력한)
 			DFS(childNode);
@@ -48,7 +48,7 @@ void BFS(int rootNode)
 	// 너비 우선 탐색을 위해 "Queue 자료구조"를 사용한다
 	std::queue<int> myQueue;
 	// 처음 진입 노드인 루트 노드를 방문 처리
-	visited[rootNode] = true;
+	visited_J[rootNode] = true;
 	// 루트 노드를 처음에 Queue에 담고 시작
 	myQueue.push(rootNode);
 
@@ -67,12 +67,12 @@ void BFS(int rootNode)
 			int childNode = tree[parentNode][i];
 
 			// * 방문 정보를 검사하는 이유는 자식 노드만 가져오기 위함 *
-			if (!visited[childNode])
+			if (!visited_J[childNode])
 			{
 				// Queue에 자식 노드를 Push()해준다.
 				myQueue.push(childNode);
 
-				visited[childNode] = true;
+				visited_J[childNode] = true;
 
 				// 자식 노드에 부모 정보를 등록
 				parentArr[childNode] = parentNode;

@@ -6,7 +6,7 @@ int N;
 const int MAX_SIZE = 130;
 
 int cave[MAX_SIZE][MAX_SIZE];
-bool visited[MAX_SIZE][MAX_SIZE];
+bool visited_J[MAX_SIZE][MAX_SIZE];
 int dist[MAX_SIZE][MAX_SIZE];
 
 void Dijkstra_Function()

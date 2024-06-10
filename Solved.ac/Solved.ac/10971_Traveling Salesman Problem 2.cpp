@@ -5,7 +5,7 @@ using namespace std;
 
 int N;
 int graph[11][11];
-bool visited[11];
+bool visited_J[11];
 
 int minCost = 1000000 * 10 + 1;
 
@@ -25,13 +25,13 @@ void BFS(int startNode, int curNode, int remainCnt, int curCost)
 	for (int nextNode = 1; nextNode <= N; ++nextNode)
 	{
 		// 갈 수 있는 곳이고, 방문한적이 없는 경우
-		if (graph[curNode][nextNode] != 0 && visited[nextNode] == false && curCost < minCost)
+		if (graph[curNode][nextNode] != 0 && visited_J[nextNode] == false && curCost < minCost)
 		{
-			visited[nextNode] = true; // 방문처리.
+			visited_J[nextNode] = true; // 방문처리.
 
 			BFS(startNode, nextNode, remainCnt - 1, curCost + graph[curNode][nextNode]);
 
-			visited[nextNode] = false; // 끝까지 들어갔다 나왔으므로, 방문처리를 철회한다.
+			visited_J[nextNode] = false; // 끝까지 들어갔다 나왔으므로, 방문처리를 철회한다.
 		}
 		else
 			continue;
@@ -69,13 +69,13 @@ int main()
 	int finalMinCost = 1000000 * 10 + 1;
 	for (int i = 1; i <= N; ++i)
 	{
-		visited[i] = true;
+		visited_J[i] = true;
 
 		BFS(i, i, N - 1, 0);
 
 		// 방문정보 초기화
 		// std::memset(visited, false, sizeof(visited));
-		std::fill(std::begin(visited), std::end(visited), false);
+		std::fill(std::begin(visited_J), std::end(visited_J), false);
 
 		// 최종 최소 비용 계산
 		finalMinCost = std::min(finalMinCost, minCost);

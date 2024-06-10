@@ -14,16 +14,16 @@ int length, m;
 int map[500][500] = {};
 
 // 방문 정보
-bool visited[500][500] = {};
+bool visited_J[500][500] = {};
 
 // 상 하 좌 우
-int dx[4] = { 0,0,-1,1 };
-int dy[4] = { -1,1,0,0 };
+int deltaCol[4] = { 0,0,-1,1 };
+int deltaRow[4] = { -1,1,0,0 };
 
 int BFS(int startY, int startX)
 {
 	std::queue<std::pair<int, int>> myQueue;
-	visited[startY][startX] = true;
+	visited_J[startY][startX] = true;
 	myQueue.emplace(startX, startY);
 	int innerCount = 1;
 
@@ -36,16 +36,16 @@ int BFS(int startY, int startX)
 		for (int i = 0; i < 4; ++i)
 		{
 			// 다음 위치
-			std::pair<int, int> nextPos(front.first + dx[i], front.second + dy[i]);
+			std::pair<int, int> nextPos(front.first + deltaCol[i], front.second + deltaRow[i]);
 
 			// 지도를 넘어가면 다시 탐색
 			if (nextPos.first < 0 || nextPos.second < 0 || nextPos.first > m - 1 || nextPos.second > length - 1)
 				continue;
 
 			// 방문 정보와 지도 정보를 가지고 탐색 결정
-			if (!visited[nextPos.second][nextPos.first] && map[nextPos.second][nextPos.first] == 1)
+			if (!visited_J[nextPos.second][nextPos.first] && map[nextPos.second][nextPos.first] == 1)
 			{
-				visited[nextPos.second][nextPos.first] = true;
+				visited_J[nextPos.second][nextPos.first] = true;
 				myQueue.push(nextPos);
 				innerCount++;
 			}
@@ -85,7 +85,7 @@ int main()
 		for (int j = 0; j < m; ++j)
 		{
 			// 방문 정보와 지도 정보를 가지고 탐색 결정
-			if (!visited[i][j] && map[i][j] == 1)
+			if (!visited_J[i][j] && map[i][j] == 1)
 			{
 				maxInnerCount = std::max(maxInnerCount, BFS(i, j));
 				outterCount++;
