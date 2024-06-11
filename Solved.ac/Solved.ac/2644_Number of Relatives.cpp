@@ -5,7 +5,7 @@
 using namespace std;
 
 std::vector<std::vector<int>> graphVec;
-int visited[101];
+int visited_J[101];
 int finalDepth = -1;
 
 void DFS(int t1, int t2, int depth)
@@ -18,11 +18,11 @@ void DFS(int t1, int t2, int depth)
 
 	for (int i = 0; i < graphVec[t1].size(); ++i)
 	{
-		if (visited[graphVec[t1][i]] == false)
+		if (visited_J[graphVec[t1][i]] == false)
 		{
-			visited[graphVec[t1][i]] = true;
+			visited_J[graphVec[t1][i]] = true;
 			DFS(graphVec[t1][i], t2, depth + 1);
-			visited[graphVec[t1][i]] = false;
+			visited_J[graphVec[t1][i]] = false;
 		}
 	}
 }
@@ -67,7 +67,7 @@ int main()
 	// t1과 t2의 공통 부모를 찾고
 	// t1에서 t2를 찾으러 가는 최단 경로를 찾는다.
 	int depth = 0;
-	visited[t1] = true;
+	visited_J[t1] = true;
 	DFS(t1, t2, depth);
 
 	cout << finalDepth << endl;

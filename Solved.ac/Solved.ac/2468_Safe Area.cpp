@@ -22,10 +22,10 @@ struct Position
 int N;
 
 int map[100][100];
-int visited[100][100];
+int visited_J[100][100];
 
-int dx[4] = { 0,0,-1,1 };
-int dy[4] = { -1,1,0,0 };
+int deltaCol[4] = { 0,0,-1,1 };
+int deltaRow[4] = { -1,1,0,0 };
 
 void DFS()
 {
@@ -37,22 +37,22 @@ void BFS(int startY, int startX)
 	Position curPos(startX, startY);
 	std::queue<Position> myQueue;
 	myQueue.push(curPos);
-	visited[curPos.y][curPos.x] = 1;
+	visited_J[curPos.y][curPos.x] = 1;
 
 	while(!myQueue.empty())
 	{
 		for(int i=0; i<4; ++i)
 		{
-			Position nextPos(myQueue.front().x + dx[i], myQueue.front().y + dy[i]);
+			Position nextPos(myQueue.front().x + deltaCol[i], myQueue.front().y + deltaRow[i]);
 
 			if (nextPos.x < 0 || nextPos.x >= N || nextPos.y < 0 || nextPos.y >= N)
 				continue;
 
-			if (visited[nextPos.y][nextPos.x] == 0)
+			if (visited_J[nextPos.y][nextPos.x] == 0)
 			{
 				curPos = nextPos;
 				myQueue.push(curPos);
-				visited[curPos.y][curPos.x] = 1;
+				visited_J[curPos.y][curPos.x] = 1;
 			}
 		}
 
@@ -66,7 +66,7 @@ void ResetVisited()
 	{
 		for(int j=0; j<100; ++j)
 		{
-			visited[i][j] = 0;
+			visited_J[i][j] = 0;
 		}
 	}
 }
@@ -102,9 +102,9 @@ int main()
 			for (int j = 0; j < N; ++j)
 			{
 				if (map[i][j] <= rain)
-					visited[i][j] = 1;
+					visited_J[i][j] = 1;
 				else
-					visited[i][j] = 0;
+					visited_J[i][j] = 0;
 			}
 		}
 
@@ -113,7 +113,7 @@ int main()
 		{
 			for (int j = 0; j < N; ++j)
 			{
-				if (visited[i][j] == 0)
+				if (visited_J[i][j] == 0)
 				{
 					BFS(i, j);
 					cnt++;

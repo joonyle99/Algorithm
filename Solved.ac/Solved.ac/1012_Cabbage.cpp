@@ -14,11 +14,11 @@ int M, N, K;
 int map[50][50] = {};
 
 // 방문 정보
-bool visited[50][50] = {};
+bool visited_J[50][50] = {};
 
 // 상 하 좌 우
-int dx[4] = { 0,0,-1,1 };
-int dy[4] = { -1,1,0,0 };
+int deltaCol[4] = { 0,0,-1,1 };
+int deltaRow[4] = { -1,1,0,0 };
 
 void Reset()
 {
@@ -27,7 +27,7 @@ void Reset()
 		for (int j = 0; j < 50; ++j)
 		{
 			map[i][j] = 0;
-			visited[i][j] = false;
+			visited_J[i][j] = false;
 		}
 	}
 }
@@ -35,7 +35,7 @@ void Reset()
 int BFS(int startY, int startX)
 {
 	std::queue<std::pair<int, int>> myQueue;
-	visited[startY][startX] = true;
+	visited_J[startY][startX] = true;
 	myQueue.emplace(startX, startY);
 	int cabbageCount = 1;
 
@@ -46,15 +46,15 @@ int BFS(int startY, int startX)
 
 		for (int i = 0; i < 4; ++i)
 		{
-			std::pair<int, int> nextPos(front.first + dx[i], front.second + dy[i]);
+			std::pair<int, int> nextPos(front.first + deltaCol[i], front.second + deltaRow[i]);
 
 			if (nextPos.first < 0 || nextPos.second < 0 || nextPos.first > M - 1 || nextPos.second > N - 1)
 				continue;
 
 			// 배추가 있고 방문한적이 없다면
-			if (!visited[nextPos.second][nextPos.first] && map[nextPos.second][nextPos.first] == 1)
+			if (!visited_J[nextPos.second][nextPos.first] && map[nextPos.second][nextPos.first] == 1)
 			{
-				visited[nextPos.second][nextPos.first] = true;
+				visited_J[nextPos.second][nextPos.first] = true;
 				myQueue.push(nextPos);
 				cabbageCount++;
 			}
@@ -97,7 +97,7 @@ int main()
 			for (int j = 0; j < M; ++j)
 			{
 				// 배추가 있고 방문한적이 없다면
-				if (!visited[i][j] && map[i][j] == 1)
+				if (!visited_J[i][j] && map[i][j] == 1)
 				{
 					BFS(i, j);
 					earthwormCount++;

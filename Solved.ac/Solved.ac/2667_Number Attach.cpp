@@ -7,10 +7,10 @@ using namespace std;
 
 int N;
 
-int visited[26][26];
+int visited_J[26][26];
 
-int dx[4] = { 0, 0, -1, 1 };
-int dy[4] = { -1, 1, 0,0 };
+int deltaCol[4] = { 0, 0, -1, 1 };
+int deltaRow[4] = { -1, 1, 0,0 };
 
 struct Position
 {
@@ -24,7 +24,7 @@ struct Position
 int SearchAptBlock_BFS(std::vector<std::vector<char>>& map, Position pos)
 {
 	std::queue<Position> myQueue;
-	visited[pos.y][pos.x] = true;
+	visited_J[pos.y][pos.x] = true;
 	myQueue.push(pos);
 	int aptCnt = 1;
 
@@ -33,14 +33,14 @@ int SearchAptBlock_BFS(std::vector<std::vector<char>>& map, Position pos)
 		// 상하좌우 순서대로 탐색
 		for (int k = 0; k < 4; ++k)
 		{
-			Position nextPos(myQueue.front().x + dx[k], myQueue.front().y + dy[k]);
+			Position nextPos(myQueue.front().x + deltaCol[k], myQueue.front().y + deltaRow[k]);
 
 			if (nextPos.x > N || nextPos.y > N || nextPos.x < 1 || nextPos.y < 1)
 				continue;
 
-			if (map[nextPos.y][nextPos.x] == '1' && visited[nextPos.y][nextPos.x] == false)
+			if (map[nextPos.y][nextPos.x] == '1' && visited_J[nextPos.y][nextPos.x] == false)
 			{
-				visited[nextPos.y][nextPos.x] = true;
+				visited_J[nextPos.y][nextPos.x] = true;
 				myQueue.push(nextPos);
 				aptCnt++;
 			}
@@ -90,7 +90,7 @@ int main()
 		for (int j = 1; j <= N; ++j)
 		{
 			// 아파트 단지 찾음
-			if (map[i][j] == '1' && visited[i][j] == false)
+			if (map[i][j] == '1' && visited_J[i][j] == false)
 			{
 				aptBlockCnt++;
 

@@ -395,6 +395,27 @@
     <ClCompile Include="1012.cpp">
       <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
     </ClCompile>
+    <ClCompile Include="7562_KnightMoving.cpp">
+      <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="1012_Cabbage2.cpp">
+      <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="4485_zelda.cpp">
+      <Filter>BaaaarkingDog_Algorithm\16.Dijkstra</Filter>
+    </ClCompile>
+    <ClCompile Include="7569_tomato.cpp">
+      <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="7576_tomato2.cpp">
+      <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="4179_Fire.cpp">
+      <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="_note_recursive.cpp">
+      <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
@@ -456,6 +477,12 @@
     </Filter>
     <Filter Include="BaaaarkingDog_Algorithm\06_BFS">
       <UniqueIdentifier>{1ce36c25-b815-4b6a-b52a-d89c8a5131de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaaaarkingDog_Algorithm\07.Recursive">
+      <UniqueIdentifier>{cfdd3f6f-5e7a-472e-b04f-730050383b64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaaaarkingDog_Algorithm\16.Dijkstra">
+      <UniqueIdentifier>{fa82ad63-43a0-4bf9-8f0b-f3a2dd4f56f0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
