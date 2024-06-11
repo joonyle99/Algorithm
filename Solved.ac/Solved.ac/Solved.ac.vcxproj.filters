@@ -386,7 +386,7 @@
     <ClCompile Include="2178_2.cpp">
       <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
     </ClCompile>
-    <ClCompile Include="7576.cpp">
+    <ClCompile Include="7576_tomato1.cpp">
       <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
     </ClCompile>
     <ClCompile Include="problem2.cpp">
@@ -404,17 +404,23 @@
     <ClCompile Include="4485_zelda.cpp">
       <Filter>BaaaarkingDog_Algorithm\16.Dijkstra</Filter>
     </ClCompile>
-    <ClCompile Include="7569_tomato.cpp">
+    <ClCompile Include="7569_tomato3.cpp">
       <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
     </ClCompile>
     <ClCompile Include="7576_tomato2.cpp">
       <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
     </ClCompile>
-    <ClCompile Include="4179_Fire.cpp">
+    <ClCompile Include="4179_Fire2.cpp">
       <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
     </ClCompile>
     <ClCompile Include="_note_recursive.cpp">
       <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
+    </ClCompile>
+    <ClCompile Include="10026_redgreen.cpp">
+      <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="5427_Fire1.cpp">
+      <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

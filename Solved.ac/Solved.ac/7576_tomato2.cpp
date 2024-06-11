@@ -10,20 +10,20 @@ int dy[4] = { 1, 0, -1, 0 };
 
 int minDuration = 0;
 
-queue<pair<int, int>> q;
+queue<pair<int, int>> q1;
 
 void BFS()
 {
-	while (!q.empty()) {
-		pair<int, int> now = q.front();
-		q.pop();
+	while (!q1.empty()) {
+		pair<int, int> now = q1.front();
+		q1.pop();
 		for (int i = 0; i < 4; i++) {
 			pair<int, int> next = make_pair(now.first + dx[i], now.second + dy[i]);
 			if (next.first < 0 || next.first > M - 1 || next.second < 0 || next.second > N - 1) continue;
 			if (tomato[next.second][next.first] != 0) continue;
 			dist[next.second][next.first] = dist[now.second][now.first] + 1;	/// ÇÙ½É Æ÷ÀÎÆ® 2
 			tomato[next.second][next.first] = 1;
-			q.push(next);
+			q1.push(next);
 		}
 	}
 }
@@ -58,7 +58,7 @@ int main()
 	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < M; j++) {
 			if (tomato[i][j] == 1)
-				q.push(make_pair(j, i));	/// ÇÙ½É Æ÷ÀÎÆ® 1
+				q1.push(make_pair(j, i));	/// ÇÙ½É Æ÷ÀÎÆ® 1
 
 			if (tomato[i][j] == 0)
 				isAllMature = false;

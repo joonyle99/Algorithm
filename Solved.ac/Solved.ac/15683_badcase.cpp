@@ -7,7 +7,7 @@ using namespace std;
 int N, M;
 int maps[10][10];
 int firstMaps[10][10];
-int areaCount = 0x7F7F7F7F; // 2,130,706,431
+int normalAreaCount = 0x7F7F7F7F; // 2,130,706,431
 
 class myVector
 {
@@ -193,11 +193,11 @@ int main()
 		}
 
 		// 한 사이클 전부 돌았을 때 체크한다
-		areaCount = min(check_areaCount(), areaCount);
+		normalAreaCount = min(check_areaCount(), normalAreaCount);
 		reset_map();
 	}
 
-	cout << areaCount << '\n';
+	cout << normalAreaCount << '\n';
 
 	return 0;
 }

@@ -6,7 +6,7 @@ int board[1001][1001];
 int dist[1001][1001];
 int deltaCol[4] = { 0, 1, 0, -1 };
 int deltaRow[4] = { 1, 0, -1, 0 };
-queue<pair<int, int>> q;
+queue<pair<int, int>> q1;
 
 void init()
 {
@@ -37,16 +37,16 @@ int main()
 		for (int j = 0; j < M; ++j)
 		{
 			cin >> board[i][j];
-			if (board[i][j] == 1) q.push(make_pair(j, i));
+			if (board[i][j] == 1) q1.push(make_pair(j, i));
 		}
 	}
 
 	init();
 
-	while (!q.empty())
+	while (!q1.empty())
 	{
-		pair<int, int> curPos = q.front();
-		q.pop();
+		pair<int, int> curPos = q1.front();
+		q1.pop();
 		for (int i = 0; i < 4; ++i)
 		{
 			pair<int, int> nextPos = make_pair(curPos.first + deltaCol[i], curPos.second + deltaRow[i]);
@@ -55,7 +55,7 @@ int main()
 			if (dist[nextPos.second][nextPos.first] != 0) continue;
 			board[nextPos.second][nextPos.first] = 1;
 			dist[nextPos.second][nextPos.first] = dist[curPos.second][curPos.first] + 1;
-			q.push(nextPos);
+			q1.push(nextPos);
 		}
 	}
 
