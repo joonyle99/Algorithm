@@ -422,6 +422,18 @@
     <ClCompile Include="5427_Fire1.cpp">
       <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
     </ClCompile>
+    <ClCompile Include="_node_recursive2.cpp">
+      <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
+    </ClCompile>
+    <ClCompile Include="17478_whatisrecursive.cpp">
+      <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
+    </ClCompile>
+    <ClCompile Include="178-_papercount.cpp">
+      <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
+    </ClCompile>
+    <ClCompile Include="2630_colorpaper.cpp">
+      <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
