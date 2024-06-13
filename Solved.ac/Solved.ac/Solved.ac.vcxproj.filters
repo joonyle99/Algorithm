@@ -434,6 +434,15 @@
     <ClCompile Include="2630_colorpaper.cpp">
       <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
     </ClCompile>
+    <ClCompile Include="1992_quadtree.cpp">
+      <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
+    </ClCompile>
+    <ClCompile Include="2447_star1.cpp">
+      <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
+    </ClCompile>
+    <ClCompile Include="2448_star2.cpp">
+      <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
