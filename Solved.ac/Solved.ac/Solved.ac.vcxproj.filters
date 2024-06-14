@@ -443,6 +443,9 @@
     <ClCompile Include="2448_star2.cpp">
       <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
     </ClCompile>
+    <ClCompile Include="_note_backTracking.cpp">
+      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
@@ -510,6 +513,9 @@
     </Filter>
     <Filter Include="BaaaarkingDog_Algorithm\16.Dijkstra">
       <UniqueIdentifier>{fa82ad63-43a0-4bf9-8f0b-f3a2dd4f56f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaaaarkingDog_Algorithm\08.Back Tracking">
+      <UniqueIdentifier>{7f2b10fd-c6a6-4259-9ca6-08743d0739f3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
