@@ -110,30 +110,51 @@ void Solve_1182()
 	cout << cnt;
 }
 
-// 배치한 퀸의 목록을 외부 변수로 보관한다
-typedef pair<int, int> pos;
-stack<pos> myStack;
-
-void Recursive3(int count)
+void myFunc(int curRow, int* myArray)
 {
 	// base condition
-	if (count == N) {
+	if (curRow == N)
+	{
 		cnt++;
 		return;
 	}
 
-	// 배치할 수 있는지 판단한다
+	// (curRow, i)에 퀸을 놓는다
+	for (int curCol = 0; curCol < N; curCol++)
+	{
+		// 놓을 수 없는 경우
+		// 1. 같은 열에 있는 경우
+		// 2. 같은 대각선에 있는 경우
 
-	// 1. 같은 열에 있으면 안됨
-	// 2. 대각선에 있으면 안됨 (왼쪽 아래 대각선, 오른쪽 아래 대각선)
+		// (curRow, curCol)에 배치할 수 있는지 판단한다
+		bool isAvailable = true;
+
+		// 이전에 배치한 퀸과 비교한다
+		for (int count = 0; count < curRow; count++)
+		{
+			int r = count;
+			int c = myArray[count];
+
+			if (curCol == c || curRow + curCol == r + c || curRow - curCol == r - c)
+			{
+				isAvailable = false;
+				break;
+			}
+		}
+
+		if (isAvailable)
+		{
+			myArray[curRow] = curCol;
+			myFunc(curRow + 1, myArray);
+		}
+	}
 }
 
 void Solve_9663()
 {
 	cin >> N;
-
-	Recursive3(0);
-
+	int columnArray[25];
+	myFunc(0, columnArray);
 	cout << cnt;
 }
 
