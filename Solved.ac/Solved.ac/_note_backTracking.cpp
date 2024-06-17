@@ -94,6 +94,12 @@ void Recursive2(int curIdx, int sum)
 	// 결국 2^N의 경우의 수를 모두 탐색한다.
 }
 
+/// <summary>
+/// N개의 수를 넣을지 안 넣을지 경우의 수
+/// 2^N
+/// 공집합 제외 시 2^N - 1
+/// 부분 수열의 합 문제와 같은 경우 사용된다
+/// </summary>
 void Solve_1182()
 {
 	cin >> N >> S;

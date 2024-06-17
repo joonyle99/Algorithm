@@ -467,6 +467,21 @@
     <ClCompile Include="2309_seven.cpp">
       <Filter>01_Implement</Filter>
     </ClCompile>
+    <ClCompile Include="15657_N&amp;M_8.cpp">
+      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="15663_N&amp;M_9.cpp">
+      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="15664_N&amp;M_10.cpp">
+      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="15665_N&amp;M_11.cpp">
+      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="15666_N&amp;M_12.cpp">
+      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
