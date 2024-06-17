@@ -464,6 +464,9 @@
     <ClCompile Include="15656_N&amp;M_7.cpp">
       <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
     </ClCompile>
+    <ClCompile Include="2309_seven.cpp">
+      <Filter>01_Implement</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">

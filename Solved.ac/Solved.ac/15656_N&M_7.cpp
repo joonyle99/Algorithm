@@ -11,7 +11,7 @@ int main()
 
     // Title : N과 M (7)
 
-    //
+    // 같은 수를 여러 번 골라도 된다 i.g)
 
     return 0;
 }

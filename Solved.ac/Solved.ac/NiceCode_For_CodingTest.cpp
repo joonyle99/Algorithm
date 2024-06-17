@@ -4,7 +4,7 @@
 
 #include <bits/stdc++.h>						// 1. 헤더파일 라이브러리
 using namespace std;							// 2. 네임스페이스 std 사용
-int length, target, a[10005], t;				// 3. 전역변수로 선언 (+ 배열 크기 넉넉하게 잡기)
+int length, target, answer[10005], t;				// 3. 전역변수로 선언 (+ 배열 크기 넉넉하게 잡기)
 int main()
 {
 	ios::sync_with_stdio(0);
@@ -13,9 +13,9 @@ int main()
 	cin >> length >> target;
 
 	// 배열 사용하는 방식
-	for (int i = 0; i < length; ++i) cin >> a[i];
+	for (int i = 0; i < length; ++i) cin >> answer[i];
 	for (int i = 0; i < length; ++i)
-		if (a[i] < target) cout << a[i] << ' ';
+		if (answer[i] < target) cout << answer[i] << ' ';
 
 	// 배열 사용하지 않는 방식
 	while (length--) {							// 4. 단순히 횟수 반복이라면 while을 사용하자
