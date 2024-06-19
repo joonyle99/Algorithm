@@ -287,19 +287,19 @@
       <Filter>BaaaarkingDog_Algorithm\02_Linked List</Filter>
     </ClCompile>
     <ClCompile Include="_note_sort1.cpp">
-      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+      <Filter>BaaaarkingDog_Algorithm\10_Sort1</Filter>
     </ClCompile>
     <ClCompile Include="11728.cpp">
-      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+      <Filter>BaaaarkingDog_Algorithm\10_Sort1</Filter>
     </ClCompile>
     <ClCompile Include="sort_library.cpp">
-      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+      <Filter>BaaaarkingDog_Algorithm\10_Sort1</Filter>
     </ClCompile>
     <ClCompile Include="merge_sort_test.cpp">
-      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+      <Filter>BaaaarkingDog_Algorithm\10_Sort1</Filter>
     </ClCompile>
     <ClCompile Include="2751.cpp">
-      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+      <Filter>BaaaarkingDog_Algorithm\10_Sort1</Filter>
     </ClCompile>
     <ClCompile Include="Random.cpp">
       <Filter>Util</Filter>
@@ -308,22 +308,22 @@
       <Filter>Util</Filter>
     </ClCompile>
     <ClCompile Include="quick_sort_test.cpp">
-      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+      <Filter>BaaaarkingDog_Algorithm\10_Sort1</Filter>
     </ClCompile>
     <ClCompile Include="merge_sort_practice.cpp">
-      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+      <Filter>BaaaarkingDog_Algorithm\10_Sort1</Filter>
     </ClCompile>
     <ClCompile Include="10989.cpp">
-      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+      <Filter>BaaaarkingDog_Algorithm\10_Sort1</Filter>
     </ClCompile>
     <ClCompile Include="11931.cpp">
-      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+      <Filter>BaaaarkingDog_Algorithm\10_Sort1</Filter>
     </ClCompile>
     <ClCompile Include="15688.cpp">
-      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+      <Filter>BaaaarkingDog_Algorithm\10_Sort1</Filter>
     </ClCompile>
     <ClCompile Include="10814.cpp">
-      <Filter>BaaaarkingDog_Algorithm\Sort1</Filter>
+      <Filter>BaaaarkingDog_Algorithm\10_Sort1</Filter>
     </ClCompile>
     <ClCompile Include="_note_simulation.cpp">
       <Filter>BaaaarkingDog_Algorithm\Simulation</Filter>
@@ -402,7 +402,7 @@
       <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
     </ClCompile>
     <ClCompile Include="4485_zelda.cpp">
-      <Filter>BaaaarkingDog_Algorithm\16.Dijkstra</Filter>
+      <Filter>BaaaarkingDog_Algorithm\16_Dijkstra</Filter>
     </ClCompile>
     <ClCompile Include="7569_tomato3.cpp">
       <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
@@ -414,7 +414,7 @@
       <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
     </ClCompile>
     <ClCompile Include="_note_recursive.cpp">
-      <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
+      <Filter>BaaaarkingDog_Algorithm\07_Recursive</Filter>
     </ClCompile>
     <ClCompile Include="10026_redgreen.cpp">
       <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
@@ -423,70 +423,70 @@
       <Filter>BaaaarkingDog_Algorithm\06_BFS</Filter>
     </ClCompile>
     <ClCompile Include="_node_recursive2.cpp">
-      <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
+      <Filter>BaaaarkingDog_Algorithm\07_Recursive</Filter>
     </ClCompile>
     <ClCompile Include="17478_whatisrecursive.cpp">
-      <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
+      <Filter>BaaaarkingDog_Algorithm\07_Recursive</Filter>
     </ClCompile>
     <ClCompile Include="178-_papercount.cpp">
-      <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
+      <Filter>BaaaarkingDog_Algorithm\07_Recursive</Filter>
     </ClCompile>
     <ClCompile Include="2630_colorpaper.cpp">
-      <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
+      <Filter>BaaaarkingDog_Algorithm\07_Recursive</Filter>
     </ClCompile>
     <ClCompile Include="1992_quadtree.cpp">
-      <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
+      <Filter>BaaaarkingDog_Algorithm\07_Recursive</Filter>
     </ClCompile>
     <ClCompile Include="2447_star1.cpp">
-      <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
+      <Filter>BaaaarkingDog_Algorithm\07_Recursive</Filter>
     </ClCompile>
     <ClCompile Include="2448_star2.cpp">
-      <Filter>BaaaarkingDog_Algorithm\07.Recursive</Filter>
+      <Filter>BaaaarkingDog_Algorithm\07_Recursive</Filter>
     </ClCompile>
     <ClCompile Include="_note_backTracking.cpp">
-      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+      <Filter>BaaaarkingDog_Algorithm\08_Back Tracking</Filter>
     </ClCompile>
     <ClCompile Include="15650_N&amp;M_2.cpp">
-      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+      <Filter>BaaaarkingDog_Algorithm\08_Back Tracking</Filter>
     </ClCompile>
     <ClCompile Include="15651_N&amp;M_3.cpp">
-      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+      <Filter>BaaaarkingDog_Algorithm\08_Back Tracking</Filter>
     </ClCompile>
     <ClCompile Include="15652_N&amp;M_4.cpp">
-      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+      <Filter>BaaaarkingDog_Algorithm\08_Back Tracking</Filter>
     </ClCompile>
     <ClCompile Include="15654_N&amp;M_5.cpp">
-      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+      <Filter>BaaaarkingDog_Algorithm\08_Back Tracking</Filter>
     </ClCompile>
     <ClCompile Include="15655_N&amp;M_6.cpp">
-      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+      <Filter>BaaaarkingDog_Algorithm\08_Back Tracking</Filter>
     </ClCompile>
     <ClCompile Include="15656_N&amp;M_7.cpp">
-      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+      <Filter>BaaaarkingDog_Algorithm\08_Back Tracking</Filter>
     </ClCompile>
     <ClCompile Include="2309_seven.cpp">
       <Filter>01_Implement</Filter>
     </ClCompile>
     <ClCompile Include="15657_N&amp;M_8.cpp">
-      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+      <Filter>BaaaarkingDog_Algorithm\08_Back Tracking</Filter>
     </ClCompile>
     <ClCompile Include="15663_N&amp;M_9.cpp">
-      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+      <Filter>BaaaarkingDog_Algorithm\08_Back Tracking</Filter>
     </ClCompile>
     <ClCompile Include="15664_N&amp;M_10.cpp">
-      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+      <Filter>BaaaarkingDog_Algorithm\08_Back Tracking</Filter>
     </ClCompile>
     <ClCompile Include="15665_N&amp;M_11.cpp">
-      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+      <Filter>BaaaarkingDog_Algorithm\08_Back Tracking</Filter>
     </ClCompile>
     <ClCompile Include="15666_N&amp;M_12.cpp">
-      <Filter>BaaaarkingDog_Algorithm\08.Back Tracking</Filter>
+      <Filter>BaaaarkingDog_Algorithm\08_Back Tracking</Filter>
     </ClCompile>
     <ClCompile Include="_note_implement.cpp">
-      <Filter>BaaaarkingDog_Algorithm\09.Implement</Filter>
+      <Filter>BaaaarkingDog_Algorithm\09_Implement</Filter>
     </ClCompile>
     <ClCompile Include="15683_monitor.cpp">
-      <Filter>BaaaarkingDog_Algorithm\09.Implement</Filter>
+      <Filter>BaaaarkingDog_Algorithm\09_Implement</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -523,9 +523,6 @@
     <Filter Include="BaaaarkingDog_Algorithm">
       <UniqueIdentifier>{8142395d-a259-4669-81bc-f2c026f32070}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BaaaarkingDog_Algorithm\Sort1">
-      <UniqueIdentifier>{b3b18933-4b8e-4367-b116-a4d2f856dcb8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Util">
       <UniqueIdentifier>{83e0de17-9930-4ca2-9944-17787d2d2edf}</UniqueIdentifier>
     </Filter>
@@ -550,17 +547,26 @@
     <Filter Include="BaaaarkingDog_Algorithm\06_BFS">
       <UniqueIdentifier>{1ce36c25-b815-4b6a-b52a-d89c8a5131de}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BaaaarkingDog_Algorithm\07.Recursive">
-      <UniqueIdentifier>{cfdd3f6f-5e7a-472e-b04f-730050383b64}</UniqueIdentifier>
+    <Filter Include="BaaaarkingDog_Algorithm\10_Sort1">
+      <UniqueIdentifier>{b3b18933-4b8e-4367-b116-a4d2f856dcb8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BaaaarkingDog_Algorithm\16.Dijkstra">
+    <Filter Include="BaaaarkingDog_Algorithm\16_Dijkstra">
       <UniqueIdentifier>{fa82ad63-43a0-4bf9-8f0b-f3a2dd4f56f0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BaaaarkingDog_Algorithm\08.Back Tracking">
+    <Filter Include="BaaaarkingDog_Algorithm\09_Implement">
+      <UniqueIdentifier>{406b1975-8540-4490-bc67-da9b845db055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaaaarkingDog_Algorithm\08_Back Tracking">
       <UniqueIdentifier>{7f2b10fd-c6a6-4259-9ca6-08743d0739f3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BaaaarkingDog_Algorithm\09.Implement">
-      <UniqueIdentifier>{406b1975-8540-4490-bc67-da9b845db055}</UniqueIdentifier>
+    <Filter Include="BaaaarkingDog_Algorithm\07_Recursive">
+      <UniqueIdentifier>{cfdd3f6f-5e7a-472e-b04f-730050383b64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaaaarkingDog_Algorithm\11_Dynamic Proogramming">
+      <UniqueIdentifier>{5f9fb3f0-2b01-41df-ac32-1f2ec8d3f155}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaaaarkingDog_Algorithm\12_Greedy">
+      <UniqueIdentifier>{bb924594-8f09-42f4-9b86-372e406cc8b8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
