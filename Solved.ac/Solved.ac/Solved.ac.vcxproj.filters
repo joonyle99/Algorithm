@@ -488,6 +488,9 @@
     <ClCompile Include="15683_monitor.cpp">
       <Filter>BaaaarkingDog_Algorithm\09_Implement</Filter>
     </ClCompile>
+    <ClCompile Include="18808_Sticker.cpp">
+      <Filter>BaaaarkingDog_Algorithm\09_Implement</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
