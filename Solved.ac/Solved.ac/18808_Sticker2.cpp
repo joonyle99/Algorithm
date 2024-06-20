@@ -39,6 +39,8 @@ void Rotate(int rotatedCount)
 
     int temp[15][15];
 
+    // 초기화하지 않아도 R와 C 범위 내에서만 사용하기 때문에 ~
+
     // copy
     for (int i = 0; i < R; i++) {
         for (int j = 0; j < C; j++) {
@@ -66,6 +68,10 @@ int main()
     std::cin.tie(nullptr);
 
     // Title : 스티커 붙이기
+
+    // 문제를 잘 읽고
+    // 어떻게 하면 쉽게 풀 수 있을 지
+    // 프로세스를 줄일 수 있는 부분이 어떤게 있을지 생각한다
 
     cin >> N >> M >> K;
     while (K--) {

@@ -494,6 +494,9 @@
     <ClCompile Include="18808_Sticker2.cpp">
       <Filter>BaaaarkingDog_Algorithm\09_Implement</Filter>
     </ClCompile>
+    <ClCompile Include="15686_chicken.cpp">
+      <Filter>BaaaarkingDog_Algorithm\09_Implement</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
