@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int N, M;
-int arr[10];
+int cards[10];
 int res[10];
 void Func(int curCount) {
 	if (curCount == M) {
@@ -14,9 +14,9 @@ void Func(int curCount) {
 
 	int temp = -1;
 	for (int i = 0; i < N; i++) {
-		if (temp == arr[i]) continue;
-		temp = arr[i];					/// ** 같은 깊이에서 이전 숫자와 중복되는 수를 넣으려고 하면 중복되는 수열이 만들어지기 때문에 X
-		res[curCount] = arr[i];
+		if (temp == cards[i]) continue;
+		temp = cards[i];					/// ** 같은 깊이에서 이전 숫자와 중복되는 수를 넣으려고 하면 중복되는 수열이 만들어지기 때문에 X
+		res[curCount] = cards[i];
 		Func(curCount + 1);
 	}
 }
@@ -34,9 +34,9 @@ int main()
 
 	cin >> N >> M;
 	for (int i = 0; i < N; i++) {
-		cin >> arr[i];
+		cin >> cards[i];
 	}
-	std::sort(arr, arr + N);
+	std::sort(cards, cards + N);
 	Func(0);
 
 	return 0;

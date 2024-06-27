@@ -2,7 +2,7 @@
 using namespace std;
 
 int N, M;
-int arr[10];
+int cards[10];
 int res[10];
 bool isUsed[10];
 
@@ -18,13 +18,13 @@ void Func(int curCount) {
 	int temp = -1;
 	for (int i = 0; i < N; i++) {
 		if (isUsed[i]) continue;
-		if (temp == arr[i]) continue;
+		if (temp == cards[i]) continue;
 		if (curCount > 0) {
-			if (arr[i] < res[curCount - 1])
+			if (cards[i] < res[curCount - 1])
 				continue;
 		}
-		temp = arr[i];
-		res[curCount] = arr[i];
+		temp = cards[i];
+		res[curCount] = cards[i];
 		isUsed[i] = true;
 		Func(curCount + 1);
 		isUsed[i] = false;
@@ -47,9 +47,9 @@ int main()
 
 	cin >> N >> M;
 	for (int i = 0; i < N; i++) {
-		cin >> arr[i];
+		cin >> cards[i];
 	}
-	std::sort(arr, arr + N);
+	std::sort(cards, cards + N);
 	Func(0);
 	return 0;
 }

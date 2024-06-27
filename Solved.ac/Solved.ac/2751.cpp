@@ -5,7 +5,7 @@
 
 using namespace std;
 
-vector<int> arr(1000005);
+vector<int> cards(1000005);
 vector<int> tmp(1000005);
 
 void BubbleSort(vector<int>& arr, int n)
@@ -46,15 +46,15 @@ void merge(int st, int en) {
 	int bIndex = mid;
 	vector<int> vec;
 	for (int i = st; i < en; ++i) {
-		if (aIndex >= mid) tmp[i] = arr[bIndex++];
-		else if (bIndex >= en) tmp[i] = arr[aIndex++];
-		else if (arr[aIndex] <= arr[bIndex]) tmp[i] = arr[aIndex++];
-		else tmp[i] = arr[bIndex++];
+		if (aIndex >= mid) tmp[i] = cards[bIndex++];
+		else if (bIndex >= en) tmp[i] = cards[aIndex++];
+		else if (cards[aIndex] <= cards[bIndex]) tmp[i] = cards[aIndex++];
+		else tmp[i] = cards[bIndex++];
 		vec.push_back(i);
 	}
 	for (const auto i : vec)
 	{
-		arr[i] = tmp[i];
+		cards[i] = tmp[i];
 	}
 }
 
@@ -85,7 +85,7 @@ int main()
 
 	for(int i=0; i<N; ++i)
 	{
-		cin >> arr[i];
+		cin >> cards[i];
 		// arr[i] = rd.GetRandomNumber();
 	}
 
@@ -129,7 +129,7 @@ int main()
 
 	for(int i=0; i<N; ++i)
 	{
-		cout << arr[i] << '\n';
+		cout << cards[i] << '\n';
 	}
 
 	return 0;

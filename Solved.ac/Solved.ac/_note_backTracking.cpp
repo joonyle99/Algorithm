@@ -42,13 +42,13 @@ int Func_Test(int n, int m)
 }
 
 int N, M;
-int arr[10];
+int cards[10];
 bool visited[10];
 void Recursive1(int count) {
 	// base condition
 	if (count == M) {
 		for (int index = 0; index < count; index++) {
-			cout << arr[index] << ' ';
+			cout << cards[index] << ' ';
 		}
 		cout << '\n';
 		return;
@@ -57,9 +57,9 @@ void Recursive1(int count) {
 	for (int number = 1; number <= N; number++) {
 		if (visited[number]) continue;
 		visited[number] = true;
-		arr[count] = number;
+		cards[count] = number;
 		Recursive1(count + 1);
-		arr[count] = -1;
+		cards[count] = -1;
 		visited[number] = false;
 	}
 }
@@ -68,7 +68,7 @@ void Solve_15649()
 {
 	cin >> N >> M;
 
-	fill(arr, arr + 10, -1);
+	fill(cards, cards + 10, -1);
 	Recursive1(0);
 
 	// Func_Test(N, M);

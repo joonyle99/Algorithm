@@ -2,7 +2,7 @@
 using namespace std;
 
 int N, M;
-int arr[10];
+int cards[10];
 int res[10];
 int isUsed[10];
 
@@ -19,9 +19,9 @@ void Func(int curCount) {
 	int temp = 0;
 	for (int i = 0; i < N; i++) {
 		if (isUsed[i]) continue;
-		if (temp == arr[i]) continue;	/// ** 다른 index이지만 같은 수가 중복되는 경우 스킵
-		res[curCount] = arr[i];
-		temp = arr[i];
+		if (temp == cards[i]) continue;	/// ** 다른 index이지만 같은 수가 중복되는 경우 스킵
+		res[curCount] = cards[i];
+		temp = cards[i];
 		isUsed[i] = true;
 		Func(curCount + 1);
 		isUsed[i] = false;
@@ -42,9 +42,9 @@ int main()
 
 	cin >> N >> M;
 	for (int i = 0; i < N; i++) {
-		cin >> arr[i];
+		cin >> cards[i];
 	}
-	std::sort(arr, arr + N);
+	std::sort(cards, cards + N);
 	Func(0);
 
 	return 0;

@@ -2,7 +2,7 @@
 using namespace std;
 
 int N, M;
-int arr[10];
+int cards[10];
 int res[10];
 
 void Func(int curCount)
@@ -19,7 +19,7 @@ void Func(int curCount)
         // 고른 수열은 비내림차순
         // 길이가 K인 수열 A가 A1 ≤ A2 ≤ ... ≤ AK-1 ≤ AK를 만족하면, 비내림차순이라고 한다.
 
-        int n = arr[i];
+        int n = cards[i];
 
         if (curCount > 0) {
             // 이전 요소가 더 크다면 continue
@@ -44,10 +44,10 @@ int main()
 
     cin >> N >> M;
     for (int i = 0; i < N; i++) {
-        cin >> arr[i];
+        cin >> cards[i];
     }
 
-    std::sort(arr, arr + N);
+    std::sort(cards, cards + N);
 
     Func(0);
 
