@@ -521,6 +521,12 @@
     <ClCompile Include="11652_card.cpp">
       <Filter>BaaaarkingDog_Algorithm\10_Sort2</Filter>
     </ClCompile>
+    <ClCompile Include="1463_makeTo1.cpp">
+      <Filter>BaaaarkingDog_Algorithm\11_Dynamic Proogramming</Filter>
+    </ClCompile>
+    <ClCompile Include="9095_add123.cpp">
+      <Filter>BaaaarkingDog_Algorithm\11_Dynamic Proogramming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
