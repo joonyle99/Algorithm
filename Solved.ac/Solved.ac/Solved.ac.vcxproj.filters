@@ -530,6 +530,9 @@
     <ClCompile Include="2579_stair_dp.cpp">
       <Filter>BaaaarkingDog_Algorithm\11_Dynamic Proogramming</Filter>
     </ClCompile>
+    <ClCompile Include="1149_rgb_street.cpp">
+      <Filter>BaaaarkingDog_Algorithm\11_Dynamic Proogramming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
