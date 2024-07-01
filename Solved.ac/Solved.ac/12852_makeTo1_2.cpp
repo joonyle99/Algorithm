@@ -61,8 +61,8 @@ void DFS(int x, int depth)
 	}
 }
 
-int dp[100005];
-int pre[100005];	// 경로 추적용
+int dp[1000005];
+int pre[1000005];	// 경로 추적용
 // pre[i] = i를 오는데 최적으로 온 값을 저장
 
 void DP()
