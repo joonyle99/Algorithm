@@ -533,6 +533,15 @@
     <ClCompile Include="1149_rgb_street.cpp">
       <Filter>BaaaarkingDog_Algorithm\11_Dynamic Proogramming</Filter>
     </ClCompile>
+    <ClCompile Include="11726_2xn.cpp">
+      <Filter>BaaaarkingDog_Algorithm\11_Dynamic Proogramming</Filter>
+    </ClCompile>
+    <ClCompile Include="11659_IntervalSum.cpp">
+      <Filter>BaaaarkingDog_Algorithm\11_Dynamic Proogramming</Filter>
+    </ClCompile>
+    <ClCompile Include="12852_makeTo1_2.cpp">
+      <Filter>BaaaarkingDog_Algorithm\11_Dynamic Proogramming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
