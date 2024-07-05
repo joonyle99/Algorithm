@@ -2,7 +2,7 @@
 using namespace std;
 
 int n;
-int arr[100005];
+int sequence[100005];
 int res = -0x7f7f7f7f;
 
 int main()
@@ -18,7 +18,7 @@ int main()
 	cin >> n;
 
 	for (int i = 0; i < n; i++) {
-		cin >> arr[i];
+		cin >> sequence[i];
 	}
 
 	/*
@@ -51,7 +51,7 @@ int main()
 			curSum += arr[i];
 		}
 		*/
-		curSum = max(curSum + arr[i], arr[i]); // ** 위의 주석 부분을 대체할 수 있는 한 줄의 코드 **
+		curSum = max(curSum + sequence[i], sequence[i]); // ** 위의 주석 부분을 대체할 수 있는 한 줄의 코드 **
 		res = max(res, curSum);
 	}
 

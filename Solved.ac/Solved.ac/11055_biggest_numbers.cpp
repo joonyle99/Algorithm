@@ -2,7 +2,7 @@
 using namespace std;
 
 int N;
-int arr[1005];
+int sequence[1005];
 int dp[1005];
 
 int main()
@@ -17,8 +17,8 @@ int main()
 
 	cin >> N;
 	for (int i = 0; i < N; i++) {
-		cin >> arr[i];
-		dp[i] = arr[i];	// 초기화
+		cin >> sequence[i];
+		dp[i] = sequence[i];	// 초기화
 	}
 
 	// dp[i]: i요소까지의 최대 부분합을 저장해둔다 ** 첫째: 이 발상도 어렵다 **
@@ -31,9 +31,9 @@ int main()
 		// 앞에 있는 요소들의 부분합을 저장한다
 		for (int j = 0; j < i; j++) {
 			// 작은 경우에만 부분합 계산
-			if (arr[i] > arr[j]) {
+			if (sequence[i] > sequence[j]) {
 				// j요소가 i요소보다 작기 때문에, 연쇄적으로 dp[i]를 구하기 위해 dp[j]의 값을 사용할 수 있는 것이다.. ** 둘째: 이 발상은 더 어렵다 **
-				dp[i] = max(dp[i], dp[j] + arr[i]);
+				dp[i] = max(dp[i], dp[j] + sequence[i]);
 			}
 		}
 	}
