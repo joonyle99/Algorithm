@@ -560,6 +560,7 @@
     <ClCompile Include="11055_biggest_numbers.cpp">
       <Filter>BaaaarkingDog_Algorithm\11_Dynamic Proogramming</Filter>
     </ClCompile>
+    <ClCompile Include="11053_longest_numbers.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
