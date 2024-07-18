@@ -561,6 +561,9 @@
       <Filter>BaaaarkingDog_Algorithm\11_Dynamic Proogramming</Filter>
     </ClCompile>
     <ClCompile Include="11053_longest_numbers.cpp" />
+    <ClCompile Include="9461_spiral.cpp">
+      <Filter>BaaaarkingDog_Algorithm\11_Dynamic Proogramming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
