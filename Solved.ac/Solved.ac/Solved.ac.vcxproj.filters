@@ -567,6 +567,12 @@
     <ClCompile Include="14501_leave.cpp">
       <Filter>BaaaarkingDog_Algorithm\11_Dynamic Proogramming</Filter>
     </ClCompile>
+    <ClCompile Include="15486_leave2.cpp">
+      <Filter>BaaaarkingDog_Algorithm\11_Dynamic Proogramming</Filter>
+    </ClCompile>
+    <ClCompile Include="10844_easyStartCount.cpp">
+      <Filter>BaaaarkingDog_Algorithm\11_Dynamic Proogramming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
