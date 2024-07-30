@@ -573,6 +573,9 @@
     <ClCompile Include="10844_easyStartCount.cpp">
       <Filter>BaaaarkingDog_Algorithm\11_Dynamic Proogramming</Filter>
     </ClCompile>
+    <ClCompile Include="note_greedy.cpp">
+      <Filter>BaaaarkingDog_Algorithm\12_Greedy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
