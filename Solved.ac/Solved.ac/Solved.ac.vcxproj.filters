@@ -576,6 +576,18 @@
     <ClCompile Include="note_greedy.cpp">
       <Filter>BaaaarkingDog_Algorithm\12_Greedy</Filter>
     </ClCompile>
+    <ClCompile Include="11047_coin.cpp">
+      <Filter>BaaaarkingDog_Algorithm\12_Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="1931_task_scheduling.cpp">
+      <Filter>BaaaarkingDog_Algorithm\12_Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="2217_Rope.cpp">
+      <Filter>BaaaarkingDog_Algorithm\12_Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="11559_puyopuyo.cpp">
+      <Filter>BaaaarkingDog_Algorithm\09_Implement</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
