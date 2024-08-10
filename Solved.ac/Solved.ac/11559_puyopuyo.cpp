@@ -32,7 +32,7 @@ void MoveDownAll()
 				// 세로줄에 있는 거 다 한 칸씩 내린다
 				for (int k = i - 1; k >= 0; k--)
 				{
-					// 한 칸씩 내린다
+					// 한 칸씩 내린다 (Swap을 사용해도 된다)
 					field[k + 1][j] = field[k][j];
 
 					if (k == 0)
