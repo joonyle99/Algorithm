@@ -594,6 +594,9 @@
     <ClCompile Include="14499_dice.cpp">
       <Filter>BaaaarkingDog_Algorithm\09_Implement</Filter>
     </ClCompile>
+    <ClCompile Include="13335_truck.cpp">
+      <Filter>BaaaarkingDog_Algorithm\09_Implement</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
