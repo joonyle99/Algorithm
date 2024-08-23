@@ -600,6 +600,22 @@
     <ClCompile Include="16985_Maaaaaaaaaze.cpp">
       <Filter>BaaaarkingDog_Algorithm\09_Implement</Filter>
     </ClCompile>
+    <ClCompile Include="nexon_1.cpp">
+      <Filter>Nexon</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_2.cpp">
+      <Filter>Nexon</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_3.cpp">
+      <Filter>Nexon</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_4.cpp">
+      <Filter>Nexon</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_5.cpp">
+      <Filter>Nexon</Filter>
+    </ClCompile>
+    <ClCompile Include="KMP.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
@@ -679,6 +695,9 @@
     </Filter>
     <Filter Include="BaaaarkingDog_Algorithm\10_Sort2">
       <UniqueIdentifier>{fda5b62d-89bb-4300-bde4-acafc5554385}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nexon">
+      <UniqueIdentifier>{2425ac80-1875-4830-b1a9-6171b8ad9ef6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
