@@ -616,6 +616,9 @@
       <Filter>Nexon</Filter>
     </ClCompile>
     <ClCompile Include="KMP.cpp" />
+    <ClCompile Include="1.cpp">
+      <Filter>Nextorial_2024</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
@@ -698,6 +701,9 @@
     </Filter>
     <Filter Include="Nexon">
       <UniqueIdentifier>{2425ac80-1875-4830-b1a9-6171b8ad9ef6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nextorial_2024">
+      <UniqueIdentifier>{de3ec088-6843-4113-aa33-95d4c5b42eb7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
