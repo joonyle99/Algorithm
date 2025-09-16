@@ -619,6 +619,12 @@
     <ClCompile Include="1.cpp">
       <Filter>Nextorial_2024</Filter>
     </ClCompile>
+    <ClCompile Include="6.cpp">
+      <Filter>Nextorial_2024</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawer.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
@@ -711,6 +717,9 @@
       <Filter>Util</Filter>
     </ClInclude>
     <ClInclude Include="Timer.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawer.h">
       <Filter>Util</Filter>
     </ClInclude>
   </ItemGroup>
