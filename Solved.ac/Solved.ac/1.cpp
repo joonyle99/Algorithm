@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int n = 4;
+int n = 6;
 
 void swap_ptr(int* a, int* b)
 {
@@ -36,38 +36,35 @@ void print_value(int arr[])
 /// <returns>모든 짝수 요소가 홀수 요소보다 이전 인덱스에 있는 정수 배열을 정렬하는 데 필요한 최소 이동 횟수</returns>
 int Moves(int arr[]) // int* arr와 같음
 {
-    // 모든 짝수 요소가 홀수 요소보다 앞에 있도록 정렬해야 하는데
-    // 왼쪽부터 오른쪽으로 배열을 돈다
-    // 홀수값이 있다면 last odd index를 저장한다
-    // 이후에 짝수값이 나온다면 last odd index와 swap한다
+    int move = 0;
+    int left = 0;
+    int right = n - 1;
 
-    int last = -1;
-    int cnt = 0;
-
-    for (int i = 0; i < n; i++)
+    while (left < right)
     {
-        if (arr[i] % 2 != 0)
+        if (arr[left] % 2 != 0 && arr[right] % 2 == 0)
         {
-            last = i;
-            continue;
+            swap_ref(arr[left], arr[right]);
+            move++;
+            left++;
+            right--;
         }
-
-        if (last != -1)
+        else
         {
-            print_value(arr);
+            // 짝수면 절대 안움직임
+            if (arr[left] % 2 == 0)
+            {
+                left++;
+            }
             
-            swap_ptr(&arr[i], &arr[last]);
-
-            print_value(arr);
-
-            last = -1;
-            cnt++;
+            if (arr[right] % 2 != 0)
+            {
+                right--;
+            }
         }
-
-        //swap_ref(arr[i], arr[last]);
     }
 
-    return cnt;
+    return move;
 }
 
 int main()
@@ -80,9 +77,15 @@ int main()
 
     // Title : 같은 팀끼리 모여라
 
-    int arr[] = { 8, 1, 4, 7 };
+    // Algorithm : 그리디 / 투 포인터
+
+    int arr[] = { 1, 1, 1, 2, 2, 2 };
+
+    print_value(arr);
 
     cout << Moves(arr) << '\n';
+
+    print_value(arr);
 
     return 0;
 }
