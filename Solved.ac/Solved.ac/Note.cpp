@@ -1,4 +1,4 @@
-﻿#include <bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 // '우선 순위 큐'
@@ -33,7 +33,6 @@ using namespace std;
 // 2. 최대 힙
 // - 부모가 자식보다 커야 함
 // - 루트에 있는 값이 가장 큰 값이 된다
-
 
 // ⚠️'이진 검색 트리'와 '힙'은 다르다. 이진 트리라는 공통점만 있을 뿐, 서로 다른 구조임
 

@@ -3,19 +3,24 @@ using namespace std;
 
 vector<int> nodeDistance(int s_nodes, int s_edges, vector<int> s_from, vector<int> s_to)
 {
+    // ìˆœí™˜í•˜ëŠ” ê³ ë¦¬ë¡œë¶€í„°ì˜ ê±°ë¦¬ë¥¼ ë°°ì—´ë¡œ ë°˜í™˜
+    // s_nodesì˜ ê°ê°ì˜ ê±°ë¦¬ë¥¼ ë°˜í™˜í•¨
 
-    //return   
+    // ìˆœí™˜í•˜ëŠ” ë…¸ë“œë¥¼ ì°¾ëŠ”ë‹¤
+
+
+    //return
 }
 
 int main()
 {
-    // c¿Í c++ÀÇ streamÀ» ²÷½À´Ï´Ù. (printf¿Í coutÀ» °°ÀÌ È¥¿ëÇÒ ¼ö ¾ø½À´Ï´Ù.)
+    // cì™€ c++ì˜ streamì„ ëŠìŠµë‹ˆë‹¤. (printfì™€ coutì„ ê°™ì´ í˜¼ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.)
     std::ios::sync_with_stdio(false);
 
-    // cinÀ¸·Î ÀÔ·Â°ªÀ» ¹Ş±â Àü¿¡ cout¹öÆÛ¸¦ ºñ¿ìÁö ¾Ê½À´Ï´Ù.
+    // cinìœ¼ë¡œ ì…ë ¥ê°’ì„ ë°›ê¸° ì „ì— coutë²„í¼ë¥¼ ë¹„ìš°ì§€ ì•ŠìŠµë‹ˆë‹¤.
     std::cin.tie(nullptr);
 
-    // Title : ¼øÈ¯±¸Á¶¿ÍÀÇ °Å¸®¸¦ ±¸ÇÏ½Ã¿À
+    // Title : ìˆœí™˜êµ¬ì¡°ì™€ì˜ ê±°ë¦¬ë¥¼ êµ¬í•˜ì‹œì˜¤
 
     // 
 

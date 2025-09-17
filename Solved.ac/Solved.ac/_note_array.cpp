@@ -1,7 +1,7 @@
-// ¹è¿­Àº µÎ °¡Áö ¿ëµµ·Î »ç¿ëµÈ´Ù
+// ë°°ì—´ì€ ë‘ ê°€ì§€ ìš©ë„ë¡œ ì‚¬ìš©ëœë‹¤
 // 
-// 1. ÀÔ·Â°ªÀ» ´ã¾ÆµÎ±â À§ÇÑ ¿ëµµ
-// 2. ºü¸£°í È¿À²ÀûÀÎ O(1)·Î Á¢±ÙÇÏ±â À§ÇÑ ¿ëµµ
+// 1. ìž…ë ¥ê°’ì„ ë‹´ì•„ë‘ê¸° ìœ„í•œ ìš©ë„
+// 2. ë¹ ë¥´ê³  íš¨ìœ¨ì ì¸ O(1)ë¡œ ì ‘ê·¼í•˜ê¸° ìœ„í•œ ìš©ë„
 //
-// µîÀå È½¼ö ÀúÀå ex) int alphabet[26]; alphabe[c - 'a']++;
-// ÇØ´çÇÏ´Â ¼ýÀÚ°¡ µîÀåÇÑ ÀûÀÌ ÀÖ´ÂÁö È®ÀÎ ex) checkArr[input] = 1; if(checkArr[x - input] == 1) {}
+// ë“±ìž¥ íšŸìˆ˜ ì €ìž¥ ex) int alphabet[26]; alphabet[c - 'a']++;
+// í•´ë‹¹í•˜ëŠ” ìˆ«ìžê°€ ë“±ìž¥í•œ ì ì´ ìžˆëŠ”ì§€ í™•ì¸ ex) checkArr[input] = 1; if(checkArr[x - input] == 1) {}
