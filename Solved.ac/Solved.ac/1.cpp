@@ -17,18 +17,6 @@ void swap_ref(int& a, int& b)
     b = temp;
 }
 
-void print_value(int arr[])
-{
-    cout << "[ ";
-
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i] << ",";
-    }
-
-    cout << " ]" << '\n';
-}
-
 /// <summary>
 /// 
 /// </summary>
@@ -79,13 +67,12 @@ int main()
 
     // Algorithm : 그리디 / 투 포인터
 
+    /// 풀이 방법
+    // 
+
     int arr[] = { 1, 1, 1, 2, 2, 2 };
 
-    print_value(arr);
-
     cout << Moves(arr) << '\n';
-
-    print_value(arr);
 
     return 0;
 }
