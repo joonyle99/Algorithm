@@ -11,19 +11,35 @@
 			</SnippetTypes>
 		</Header>
 		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>title</ID>
+					<ToolTip>문제 제목 입력</ToolTip>
+					<Default>Problem Name</Default>
+				</Literal>
+				<Literal>
+					<ID>algorithm</ID>
+					<ToolTip>알고리즘 설명 입력</ToolTip>
+					<Default>Algorithm Name</Default>
+				</Literal>
+			</Declarations>
 			<Code Language="CPP">
 				<![CDATA[#include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-	// c와 c++의 stream을 끊습니다. (printf와 cout을 같이 혼용할 수 없습니다.)
-    std::ios::sync_with_stdio(false);
+	// Disconnects C and C++ streams. (printf and cout cannot be mixed.)
+	std::ios::sync_with_stdio(false);
 
-    // cin으로 입력값을 받기 전에 cout버퍼를 비우지 않습니다.
-    std::cin.tie(nullptr);
+	// Do not flush the cout buffer before receiving input with cin.
+	std::cin.tie(nullptr);
 
-	// Title : $end$
+	// Title : $title$
+	
+	// Algorithm : $algorithm$
+	
+	$end$
 
     return 0;
 }
