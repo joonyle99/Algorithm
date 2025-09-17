@@ -17,10 +17,10 @@ using namespace std;
 
 int main()
 {
-    // Break the ios for C and C++
+	// c와 c++의 stream을 끊습니다. (printf와 cout을 같이 혼용할 수 없습니다.)
     std::ios::sync_with_stdio(false);
 
-    // Untie the streams that bind cin and cout (Output cout before cin's buffer is empty)
+    // cin으로 입력값을 받기 전에 cout버퍼를 비우지 않습니다.
     std::cin.tie(nullptr);
 
 	// Title : $end$
