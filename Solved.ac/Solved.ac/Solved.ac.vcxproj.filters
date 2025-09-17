@@ -625,6 +625,15 @@
     <ClCompile Include="Drawer.cpp">
       <Filter>Util</Filter>
     </ClCompile>
+    <ClCompile Include="Note.cpp">
+      <Filter>09.Priority Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="11286.cpp">
+      <Filter>09.Priority Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="2.cpp">
+      <Filter>Nextorial_2024</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">
@@ -710,6 +719,12 @@
     </Filter>
     <Filter Include="Nextorial_2024">
       <UniqueIdentifier>{de3ec088-6843-4113-aa33-95d4c5b42eb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08.Two Pointer">
+      <UniqueIdentifier>{6118857d-1677-484f-a3ce-df4113d18e1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="09.Priority Queue">
+      <UniqueIdentifier>{e0b25723-fc37-47b1-a9b6-8a0c695435b9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
