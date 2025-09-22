@@ -1,30 +1,45 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+string FizzBuzz(int n)
+{
+    if (n % 3 == 0 && n % 5 == 0) {
+        return "FizzBuzz";
+    }
+    else if (n % 3 == 0 && n % 5 != 0) {
+        return "Fizz";
+    }
+    else if (n % 3 != 0 && n % 5 == 0) {
+        return "Buzz";
+    }
+    else {
+        return to_string(n);
+    }
+}
+
 int main()
 {
-	// Break the ios for C and C++
-	std::ios::sync_with_stdio(false);
+    // Break the ios for C and C++
+    std::ios::sync_with_stdio(false);
 
-	// Untie the streams that bind cin and cout (Output cout before cin's buffer is empty)
-	std::cin.tie(nullptr);
+    // Untie the streams that bind cin and cout (Output cout before cin's buffer is empty)
+    std::cin.tie(nullptr);
 
-#ifdef _DEBUG
-	cout << "<디버그 모드>" << "\n\n";
-#else
-	cout << "<릴리즈 모드>" << "\n\n";
-#endif
+    // Title : FizzBuzz
 
-	int a = 10;
-	int b = 20;
+    string s1; cin >> s1;
+    string s2; cin >> s2;
+    string s3; cin >> s3;
 
-	std::cout << "변수 a의 주소: " << &a << '\n';
-	std::cout << "변수 b의 주소: " << &b << "\n\n";
+    if (s1 != "FizzBuzz" && s1 != "Fizz" && s1 != "Buzz") {
+        cout << FizzBuzz(stoi(s1) + 3);
+    }
+    else if (s2 != "FizzBuzz" && s2 != "Fizz" && s2 != "Buzz") {
+        cout << FizzBuzz(stoi(s2) + 2);
+    }
+    else if (s3 != "FizzBuzz" && s3 != "Fizz" && s3 != "Buzz") {
+        cout << FizzBuzz(stoi(s3) + 1);
+    }
 
-	// 주소 차이 계산
-	ptrdiff_t diff = reinterpret_cast<char*>(&b) - reinterpret_cast<char*>(&a);
-
-	std::cout << "두 변수 사이의 메모리 주소 차이: " << diff << " 바이트" << '\n';
-
-	return 0;
+    return 0;
 }

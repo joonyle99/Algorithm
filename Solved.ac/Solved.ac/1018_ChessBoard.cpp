@@ -16,9 +16,9 @@ int main()
 	// Untie the streams that bind cin and cout (Output cout before cin's buffer is empty)
 	std::cin.tie(nullptr);
 
-	// Title : Ã¼½ºÆÇ ´Ù½Ã Ä¥ÇÏ±â
+	// Title : ì²´ìŠ¤íŒ ë‹¤ì‹œ ì¹ í•˜ê¸°
 
-	// Group : Brute Force ¾Ë°í¸®Áò
+	// Group : Brute Force ì•Œê³ ë¦¬ì¦˜
 
 	int N, M;
 	cin >> N >> M;
@@ -27,7 +27,7 @@ int main()
 	for (auto& vec : board)
 		vec.resize(M);
 
-	/// ÇÙ½É Æ÷ÀÎÆ®..! (¸Ó¸®°¡ ÁÁ¾Æ¾ß ¸öÀÌ °í»ý ¾ÈÇÑ´Ù..)
+	/// í•µì‹¬ í¬ì¸íŠ¸..! (ë¨¸ë¦¬ê°€ ì¢‹ì•„ì•¼ ëª¸ì´ ê³ ìƒ ì•ˆí•œë‹¤..)
 	std::string WB[8] = {
 		"WBWBWBWB",
 		"BWBWBWBW",
@@ -40,20 +40,20 @@ int main()
 	};
 
 	std::string BW[8] = {
-			"BWBWBWBW",
-			"WBWBWBWB",
-			"BWBWBWBW",
-			"WBWBWBWB",
-			"BWBWBWBW",
-			"WBWBWBWB",
-			"BWBWBWBW",
-			"WBWBWBWB"
+		"BWBWBWBW",
+		"WBWBWBWB",
+		"BWBWBWBW",
+		"WBWBWBWB",
+		"BWBWBWBW",
+		"WBWBWBWB",
+		"BWBWBWBW",
+		"WBWBWBWB"
 	};
 
-	// º¸µå »ý¼º
+	// ë³´ë“œ ìƒì„±
 	for (int i = 0; i < N; ++i)
 	{
-		// °¢ ÇàÀÇ »óÅÂ°¡ ÁÖ¾îÁø´Ù.
+		// ê° í–‰ì˜ ìƒíƒœê°€ ì£¼ì–´ì§„ë‹¤.
 		std::string inputString;
 		cin >> inputString;
 		for (int j = 0; j < inputString.length(); ++j)
@@ -66,7 +66,7 @@ int main()
 		}
 	}
 
-	// ´ëÃæ 21¾ï 4Ãµ¸¸
+	// ëŒ€ì¶© 21ì–µ 4ì²œë§Œ
 	int resultMinCount = 0x7f7f7f7f;
 
 	for (int a = 0; a <= N - 8; ++a)
@@ -83,11 +83,11 @@ int main()
 			{
 				for (int j = columnStart; j < columnStart + 8; ++j)
 				{
-					// WB¿Í ºñ±³
+					// WBì™€ ë¹„êµ
 					if(board[i][j] != WB[i - rowStart][j - columnStart])
 						wb_count++;
 
-					// Bw¿Í ºñ±³
+					// Bwì™€ ë¹„êµ
 					if (board[i][j] != BW[i - rowStart][j - columnStart])
 						bw_count++;
 				}
