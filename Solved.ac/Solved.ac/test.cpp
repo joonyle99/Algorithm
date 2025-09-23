@@ -1,45 +1,23 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-string FizzBuzz(int n)
-{
-    if (n % 3 == 0 && n % 5 == 0) {
-        return "FizzBuzz";
+int main() {
+    int n; cin >> n;
+    int sum_Y = 0;
+    int sum_M = 0;
+    for (int i = 0; i < n; i++) {
+        int input; cin >> input;
+        sum_Y += (input / 30 + 1) * 10;
+        sum_M += (input / 60 + 1) * 15;
     }
-    else if (n % 3 == 0 && n % 5 != 0) {
-        return "Fizz";
+    if (sum_Y > sum_M) {
+        cout << "M " << sum_M;
     }
-    else if (n % 3 != 0 && n % 5 == 0) {
-        return "Buzz";
+    else if (sum_Y < sum_M) {
+        cout << "Y " << sum_Y;
     }
     else {
-        return to_string(n);
+        cout << "Y M " << sum_Y;
     }
-}
-
-int main()
-{
-    // Break the ios for C and C++
-    std::ios::sync_with_stdio(false);
-
-    // Untie the streams that bind cin and cout (Output cout before cin's buffer is empty)
-    std::cin.tie(nullptr);
-
-    // Title : FizzBuzz
-
-    string s1; cin >> s1;
-    string s2; cin >> s2;
-    string s3; cin >> s3;
-
-    if (s1 != "FizzBuzz" && s1 != "Fizz" && s1 != "Buzz") {
-        cout << FizzBuzz(stoi(s1) + 3);
-    }
-    else if (s2 != "FizzBuzz" && s2 != "Fizz" && s2 != "Buzz") {
-        cout << FizzBuzz(stoi(s2) + 2);
-    }
-    else if (s3 != "FizzBuzz" && s3 != "Fizz" && s3 != "Buzz") {
-        cout << FizzBuzz(stoi(s3) + 1);
-    }
-
     return 0;
 }

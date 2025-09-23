@@ -325,7 +325,6 @@
     <ClCompile Include="10814.cpp">
       <Filter>BaaaarkingDog_Algorithm\10_Sort1</Filter>
     </ClCompile>
-    <ClCompile Include="test.cpp" />
     <ClCompile Include="_note_stack.cpp">
       <Filter>BaaaarkingDog_Algorithm\03_Stack</Filter>
     </ClCompile>
@@ -560,7 +559,6 @@
     <ClCompile Include="11055_biggest_numbers.cpp">
       <Filter>BaaaarkingDog_Algorithm\11_Dynamic Proogramming</Filter>
     </ClCompile>
-    <ClCompile Include="11053_longest_numbers.cpp" />
     <ClCompile Include="9461_spiral.cpp">
       <Filter>BaaaarkingDog_Algorithm\11_Dynamic Proogramming</Filter>
     </ClCompile>
@@ -615,7 +613,6 @@
     <ClCompile Include="nexon_5.cpp">
       <Filter>Nexon</Filter>
     </ClCompile>
-    <ClCompile Include="KMP.cpp" />
     <ClCompile Include="1.cpp">
       <Filter>Nextorial_2024</Filter>
     </ClCompile>
@@ -634,12 +631,29 @@
     <ClCompile Include="2.cpp">
       <Filter>Nextorial_2024</Filter>
     </ClCompile>
-    <ClCompile Include="test2.cpp" />
     <ClCompile Include="1927.cpp">
       <Filter>Just</Filter>
     </ClCompile>
     <ClCompile Include="14626.cpp">
       <Filter>Just</Filter>
+    </ClCompile>
+    <ClCompile Include="11053_longest_numbers.cpp">
+      <Filter>Just</Filter>
+    </ClCompile>
+    <ClCompile Include="KMP.cpp">
+      <Filter>Just</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Just</Filter>
+    </ClCompile>
+    <ClCompile Include="test2.cpp">
+      <Filter>Just</Filter>
+    </ClCompile>
+    <ClCompile Include="_implement_array.cpp">
+      <Filter>BaaaarkingDog_Algorithm\01_Array</Filter>
+    </ClCompile>
+    <ClCompile Include="10808.cpp">
+      <Filter>BaaaarkingDog_Algorithm\01_Array</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
