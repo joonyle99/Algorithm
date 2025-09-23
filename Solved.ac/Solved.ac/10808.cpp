@@ -3,7 +3,7 @@ using namespace std;
 
 string s;
 //char arr[26];
-int arr[26] = { 0, }; // arr의 index를 알파벳과 대응하는 방식을 사용한다
+int existArr[26] = { 0, }; // arr의 index를 알파벳과 대응하는 방식을 사용한다
 					// 1. index - alphabet
 					// 2. value - count
 
@@ -23,11 +23,11 @@ int main()
 
 	for (int i = 0; i < s.size(); i++) {
 		int alphabet = (int)s[i] - 'a';
-		arr[alphabet]++;
+		existArr[alphabet]++;
 	}
 
 	for (int i = 0; i < 26; i++) {
-		cout << arr[i] << ' ';
+		cout << existArr[i] << ' ';
 	}
 
 	return 0;

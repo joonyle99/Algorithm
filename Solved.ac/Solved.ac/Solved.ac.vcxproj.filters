@@ -646,9 +646,6 @@
     <ClCompile Include="test.cpp">
       <Filter>Just</Filter>
     </ClCompile>
-    <ClCompile Include="test2.cpp">
-      <Filter>Just</Filter>
-    </ClCompile>
     <ClCompile Include="_implement_array.cpp">
       <Filter>BaaaarkingDog_Algorithm\01_Array</Filter>
     </ClCompile>
