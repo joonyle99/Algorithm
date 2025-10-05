@@ -652,6 +652,9 @@
     <ClCompile Include="10808.cpp">
       <Filter>BaaaarkingDog_Algorithm\01_Array</Filter>
     </ClCompile>
+    <ClCompile Include="test2.cpp">
+      <Filter>Just</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="04_Sort">

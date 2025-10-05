@@ -1,28 +1,76 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int n;
-int vArr[100000] = { 0, };
-bool existArr[1000001] = { false, };
-int x;
+int n; // 수학 여행에 참가하는 학생 수
+int k; // 한 방에 배정할 수 있는 최대 인원 수
+int arr[7][2]; // row 학년, col 성별
 
 int main() {
-    cin >> n;
-    for (int i = 0; i < n; i++) {
-        cin >> vArr[i]; // 입력값 저장용
-        existArr[vArr[i]] = true; // 입력값 존재 여부 저장
+    for (int i = 1; i <=6; i++) {
+        fill(arr[i], arr[i] + 2, 0);
     }
-    cin >> x;
-    int cnt = 0;
+    cin >> n >> k;
     for (int i = 0; i < n; i++) {
-        int vOrigin = vArr[i];
-        if (x <= vOrigin) continue; // 합이 요소 하나보다 작거나 같으면 성립이 불가능 (입력값은 무조건 자연수)
-        int vOpposite = x - vOrigin;
-        if (vOpposite > 1000000) continue; // x는 200백만일 수 있는데 이 예외처리 안해주려면 existArr의 크기를 200백만으로 늘려주는 방법도 있음
-        if (existArr[vOpposite] == true) {
-            cnt++;
+        int s; cin >> s;
+        int y; cin >> y;
+        arr[y][s]++;
+    }
+    int sum = 0;
+    for (int y = 1; y <= 6; y++) {
+        // k == 3
+        // 
+        // 0 -> 0
+        // 
+        // 1 -> 1
+        // 2 -> 1
+        // 3 -> 1
+        // 
+        // 4 -> 2
+        // 5 -> 2
+        // 6 -> 2
+        // 
+        // 7 -> 3
+        // 
+        // .
+        // ..
+        // ...
+
+        // woman == 0
+        // woman != 0
+        // -> 
+
+        // woman / k
+        // 0
+        // 0
+        // 0
+        // 1
+
+        // woman / k + 1
+        // 1
+        // 1
+        // 1
+        // 2
+
+        // (woman - 1) / k + 1
+        // ?
+        // 1
+        // 1
+        // 1
+        // 2
+        // 2
+
+        // 여자
+        int woman = arr[y][0];
+        if (woman > 0) {
+
+            sum += (woman - 1) / k + 1;
+        }
+        // 남자
+        int man = arr[y][1];
+        if (man > 0) {
+            sum += (man - 1) / k + 1;
         }
     }
-    cout << cnt / 2;
+    cout << sum;
     return 0;
 }
